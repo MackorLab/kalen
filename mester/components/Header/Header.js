@@ -6,7 +6,8 @@ class Header {
     render(count) {
         const html = `
            
-                
+        <div class="row">
+  <div class="col-sm-10">        
   
             
          <div class="month">      
@@ -31,7 +32,12 @@ class Header {
 </ul>
        
                 
-                
+    </div>
+  <div class="col-sm-2">
+  
+  
+  </div>
+</div>               
   
             
         `;
