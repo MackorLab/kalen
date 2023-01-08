@@ -88,11 +88,11 @@ htmlCatalog += `
 
         const html = `
             <div class="row">
-  <div class="col-sm-9">
+  <div class="col-sm-10">
                 ${htmlCatalog}
 		
   </div>
-  <div class="col-sm-3">
+  <div class="col-sm-2">
   
   
   </div>
