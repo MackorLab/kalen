@@ -71,9 +71,9 @@ htmlCatalog += `
             
 
         const html = `
-            <ul class="products-container">
+            
                 ${htmlCatalog}
-            </ul>
+            
         `;
 
         ROOT_PRODUCTS.innerHTML = html;
