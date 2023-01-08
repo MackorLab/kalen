@@ -47,14 +47,17 @@ htmlCatalog += `
 
 
 
+<li>
+  <div class="dropdown">
+  <button class="dropbtn">${dey}</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
 
-
-  
-</li>
-<ul class="days">  
-  <li><span class="active"  style = "background: linear-gradient(${col_utr} 50%, ${col_vech} 50%); padding: 1px 10px 1px 10px">${dey}</span></li>
  
-</ul>
 
 
 
@@ -84,9 +87,9 @@ htmlCatalog += `
             
 
         const html = `
-            
+            <ul class="days"> 
                 ${htmlCatalog}
-            
+           </ul> 
         `;
 
         ROOT_PRODUCTS.innerHTML = html;
