@@ -51,9 +51,9 @@ htmlCatalog += `
   <div class="dropdown">
   <a class="dropbtn">${dey}</a>
   <div class="dropdown-content">
-    <a href="#">Утро 9 - 11МСК</a>
-    <a href="#">День 13 - 15МСК</a>
-    <a href="#">Вечер 17 -19МСК</a>
+    <a href="#">9 - 11МСК</a>
+    <a href="#">13 - 15МСК</a>
+    <a href="#">17 - 19МСК</a>
   </div>
 </div>
 
