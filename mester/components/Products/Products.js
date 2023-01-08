@@ -87,16 +87,10 @@ htmlCatalog += `
             
 
         const html = `
-            <div class="row">
-  <div class="col-sm-10">
+            
                 ${htmlCatalog}
 		
-  </div>
-  <div class="col-sm-2">
   
-  
-  </div>
-</div> 
         `;
 
         ROOT_PRODUCTS.innerHTML = html;
