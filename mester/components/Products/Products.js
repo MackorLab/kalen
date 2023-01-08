@@ -48,7 +48,7 @@ htmlCatalog += `
 
 
 
-
+<ul class="days"> 
 
 
   <li>
@@ -67,7 +67,7 @@ htmlCatalog += `
 
 
 
-
+</ul>
 
 
 
