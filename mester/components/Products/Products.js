@@ -87,9 +87,9 @@ htmlCatalog += `
             
 
         const html = `
-            
+            <div class="osnv_sdvg">  
                 ${htmlCatalog}
-		
+	</div>	
   
         `;
 
