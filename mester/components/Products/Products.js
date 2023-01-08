@@ -43,11 +43,35 @@ htmlCatalog += `
 
 
 
-</li>
-<ul class="days">  
-  <li><span class="active"  style = "background: linear-gradient(${col_utr} 50%, ${col_vech} 50%); padding: 1px 10px 1px 10px">${dey}</span></li>
- 
-</ul>
+
+
+
+
+
+
+
+
+  <li>
+  <span class="active" >
+  <div class="dropdown">
+  <button class="dropbtn" style = "background: linear-gradient(#33cc33 33%, #cc3333 33%, #cc3333 67%, #33cc33 67%); padding: 10px 19px 10px 19px">${dey}</button>
+  <div class="dropdown-content">
+    <a href="#">Link 11</a>
+    <a href="#">Link 22</a>
+    <a href="#">Link 33</a>
+  </div>
+</div>
+</span>
+  </li>
+
+
+
+
+
+
+
+
+
 
 
 
