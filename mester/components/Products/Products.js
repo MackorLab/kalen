@@ -49,10 +49,10 @@ htmlCatalog += `
 
 
 <ul class="days"> 
-
+<span class="active" >
 
   <li>
-  <span class="active" >
+  
   <div class="dropdown">
   <button class="dropbtn" style = "background: linear-gradient(#33cc33 33%, #cc3333 33%, #cc3333 67%, #33cc33 67%); padding: 10px 19px 10px 19px">${dey}</button>
   <div class="dropdown-content">
@@ -61,11 +61,11 @@ htmlCatalog += `
     <a href="#">Link 33</a>
   </div>
 </div>
-</span>
+
   </li>
 
 
-
+</span>
 
 </ul>
 
