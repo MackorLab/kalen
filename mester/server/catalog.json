@@ -1,0 +1,38 @@
+[
+    {
+        "id": "el1",
+        "name": "Арт-баннер для постов",
+        "img": "https://sun9-62.userapi.com/2T7BpFoHR_9mZt2_wpGv0LTylwkSm45T-52VLQ/yMSKBZ9sqMo.jpg",
+        "price": 1500 
+    },
+    {
+        "id": "el2",
+        "name": "Упаковка [базовый]",
+        "img": "https://sun9-60.userapi.com/GyhnwQQAqM5KxJEkzSfwuY5govkHbCS9vhPAwg/pd0J57niDKc.jpg",
+        "price": 3500
+    },
+    {
+        "id": "el3",
+        "name": "Улетный веб - Автоматизация Бизон 365",
+        "img": "https://i.ibb.co/CtnZ7YJ/MTXNc-qmty-U.jpg",
+        "price": 5000
+    },
+    {
+        "id": "el4",
+        "name": "Лётная школа - Доступ на 3 месяца",
+        "img": "https://i.ibb.co/1JnTXdy/l-TPQi3v-JDQ.jpg",
+        "price": 5000
+    },
+    {
+        "id": "el5",
+        "name": "«Вовлечение Х10»",
+        "img": "https://i.ibb.co/TqZ3483/7s-HVD9qlgs-Q.jpg",
+        "price": 3000
+    },
+    {
+        "id": "el6",
+        "name": "Senler - Практический курс",
+        "img": "https://i.ibb.co/SXCLRyq/0h-PZTu-Lnmc0.jpg",
+        "price": 7000
+    }
+]

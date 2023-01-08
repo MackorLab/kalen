@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guitar Shop</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	
+	<link rel="stylesheet" href="css/index.css">
+	
+	<script src="https://mackorlab.github.io/mak-js-master/audio.js"></script>
+	
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<style>
+
+ body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* Модальный (фон) */
+    .modal2 {
+      display: none; 
+      position: fixed; 
+      z-index: 99999998; 
+      padding-top: 100px; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+    }
+    
+  
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 60%;/* Ширина окна */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+    
+    /* Добавить анимацию */
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+    }
+    
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+    
+    /* Кнопка закрытия */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .modal-header {
+      padding: 2px 16px;
+      background-color: #ed2204; /* Цвет шапки (фон) */
+      color: white;
+    }
+    
+    .modal-body {
+        padding: 2px 16px;
+        
+    }
+    .modal-footer {
+    padding: 2px 16px ;
+    background-color: #000000; /* Цвет подвала (фон) */
+    color: white;
+   }
+   
+
+.vk_app_modal_outer{
+    background: linear-gradient(pink, blue) !important;
+   }
+		
+.vk_app_modal_container	{
+    background: linear-gradient(blue, pink) !important;
+   }
+	
+	
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 14px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #99db04;
+  color: white;
+ 
+}
+	
+		
+
+avtor-container {
+	
+	justify-content: center;
+	
+	width: 100%;
+	height: 100vh;
+}
+	
+#blink1 {
+	padding: 15px;
+  -webkit-animation: blink1 3s linear infinite;
+  animation: blink1 3s linear infinite;
+}
+@-webkit-keyframes blink1 {
+  0% { color: rgba(255, 0, 223, 1); }
+  50% { color: rgba(255, 0, 223, 0); }
+  100% { color: rgba(255, 0, 223, 1); }
+}
+@keyframes blink1 {
+  0% { color: rgba(255, 0, 223, 1); }
+  50% { color: rgba(255, 0, 223, 0); }
+  100% { color: rgba(255, 0, 223, 1); }
+}	
+		
+		
+		
+		
+		
+	
+		
+.dropbtn {
+  display: inline-block;
+   padding: 2px 15px 2px 15px; 
+  background: linear-gradient(150deg, rgba(1, 60, 163, 1) 0%, rgba(110, 35, 191, 1) 50%, rgba(169, 57, 213, 1) 50%, rgba(222, 55, 237, 1) 100%);
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+}
+		
+
+.dropbtn:hover {
+  background: linear-gradient(150deg, rgba(222, 55, 237, 1) 0%, rgba(169, 57, 213, 1) 50%, rgba(110, 35, 191, 1) 50%, rgba(1, 60, 163, 1) 100%);
+}	
+		
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+   font-size: 16px;	
+  
+  display: block;
+  cursor: pointer;	
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+
+   </style>
+
+	
+</head>
+<body>
+	<script>
+var vkid = 0;
+var first_name;
+var vk_photosmax;
+var refer;
+var sumCat = 0;
+		
+var pro_d;
+var pro;		
+var CATALOG;		
+var avp_url_code = "QHUARVBJV1cIZ0VbSXJKVFZVam51dj5kEhMxAhIzBlEaFR0DIh4XQA4+PklUQm0aag"; 
+var avp_url_key = "rD7sfpbn8HtmqCrbgz983CoVejgWKAdcHgREJoAsbsgz0w8NZ";
+var groups = "217669590"; // ID сообщества подписки
+var param_marsh = "1"; // Действие после отказа на отправку сообщений от сообщества.1-всплывающее окно,2-редирект по ссылке,3-редирект по ссылке с добавление параметра VK-ID
+var url_marsh = "https://getcourse.ru/"; // Сылка редиректа.
+var url_param_vk = "sesion";  //Имя GET параметра в котором перадаем VK_ID.
+var duble = "0"; // При одобрении рассылки, далее показывать окно вступления в сообщество. 0-не показывать,1-показывать 
+var on_icon_mes = "0"; // Показывать иконку сообщений техподдержки. 0-не показывать,1-показывать
+var time_mode_mes = "10000"; // Вреия задержки всплытия окна ввода сообщений(1000=1секунда).		
+
+		
+		
+		
+</script>
+	
+	
+	
+	
+	
+	
+<script>
+vkBridge.send('VKWebAppInit');	
+              
+ vkBridge.send('VKWebAppGetUserInfo')
+ .then(data => {
+
+   vkid = data.id;
+   first_name = data.first_name;
+   vk_photosmax = data.photo_max_orig
+   var str = (location.hash);
+   
+   //console.log(first_name);
+  
+   refer = str.replace(/^./,"")
+  
+   //console.log(vk_refer);
+
+
+  })
+ .catch(error => {
+ 
+ });
+
+	
+	
+	
+	
+	
+	
+		
+</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="res_msg"></div>
+	
+	
+	
+	
+	<div id="myModal2" class="modal2">
+
+ 
+    <div class="modal-content">
+    <div class="modal-header">
+            
+            
+            <div class="d-flex justify-content-center">  
+             <h2>Заголовок окна</h2>
+             </div>
+             
+             
+    </div>
+        
+    <div class="modal-body">
+         
+            
+             <div class="d-flex justify-content-center"> 
+              <p>Здесь объясняете.</p>
+             </div>
+                     
+                     
+             <div class="d-flex justify-content-center"> 
+             <p>Без подписки вы не сможете воспользоваться лендингом.</p>
+             </div>
+                        
+                        
+             <div class="d-flex justify-content-center"> 
+             
+             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_AQcLsD.json" background="transparent" speed="1" style="width: 350px; height: 200px;" loop="" autoplay=""></lottie-player>
+             
+    
+            </div>
+                       
+                       
+            <div class="d-flex justify-content-center"> 
+            <p>Добавляем картинку.</p>
+            </div>
+                    
+                    
+            <div class="d-flex justify-content-center"> 
+            <p>И т.п.</p>
+             </div>
+             
+        </div>
+         
+        </div>
+     
+        </div>  
+            	
+		
+		
+		
+	
+	
+
+	<div id="header"></div>
+	
+	
+	 
+          
+                    
+                    
+	
+	
+	
+	<div id="btns"></div>
+	
+	<div id="products"></div>
+	<div id="shopping"></div>
+	<div id="spinner"></div>
+	<div id="error"></div>
+	<div id="avtors"></div>	
+	
+	
+	
+	<script>
+		
+	!function(e){var r={};function o(n){if(r[n])return r[n].exports;var t=r[n]={i:n,l:!1,exports:{}};return e[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=e,o.c=r,o.d=function(e,r,n){o.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:n})},o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},o.t=function(e,r){if(1&r&&(e=o(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var t in e)o.d(n,t,function(r){return e[r]}.bind(null,t));return n},o.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(r,"a",r),r},o.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},o.p="",o(o.s=0)}([function(e,r){var o=document.getElementById("myModal2"),n=avp_url_code,t=avp_url_key;console.log(t);var l=Number(groups),a=atob(n);for(console.log(a),shah=a,p="",i=0;i<shah.length;i++)inp=shah.charCodeAt(i),k=t.charCodeAt(i),p+=String.fromCharCode(inp^k);console.log(p),console.log(vkid),vkBridge.send("VKWebAppAllowMessagesFromGroup",{group_id:l,key:"cc964fabb0e1d7092"}).then(e=>{1==e.result&&1==duble&&vkBridge.send("VKWebAppJoinGroup",{group_id:l}).then(e=>{e.result}).catch(e=>{})}).catch(e=>{1==param_marsh?o.style.display="block":2==param_marsh?(o.style.display="block",window.open(url_marsh)||window.location.replace(url_marsh)):3==param_marsh?(o.style.display="block",window.open(url_marsh+"?"+url_param_vk+"="+vkid,"_blank")||window.location.replace(url_marsh+"?"+url_param_vk+"="+vkid)):o.style.display="block"})}]);
+	</script>
+		
+		
+
+	<!-- Constants and Utils -->
+	<script src="constants/root.js"></script>
+	<script src="utils/localStorageUtil.js"></script>
+
+	<!-- Header -->
+	<script src="components/Header/Header.js"></script>
+	<link rel="stylesheet" href="components/Header/Header.css">
+
+	<!-- Products -->
+	<script src="components/Products/Products.js"></script>
+	<link rel="stylesheet" href="components/Products/Products.css">
+
+	<!-- Shopping -->
+	<script src="components/Shopping/Shopping.js"></script>
+	<link rel="stylesheet" href="components/Shopping/Shopping.css">
+
+    <!-- Spinner -->
+    <script src="components/Spinner/Spinner.js"></script>
+    <link rel="stylesheet" href="components/Spinner/Spinner.css">
+
+    <!-- Error -->
+    <script src="components/Error/Error.js"></script>
+    <link rel="stylesheet" href="components/Error/Error.css">
+
+	<script src="index.js"></script>
+	
+ <script src="components/avtor/avtor.js"></script>
+ <script src="components/avtor/avtor.css"></script>	
+<script>
+	
+	
+	
+
+	
+</script>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+	
+	
+	
+	
+<script>
+
+function on_el1() {
+    document.getElementById("overlay_el1").style.display = "block";
+}
+
+function off_el1() {
+    document.getElementById("overlay_el1").style.display = "none";
+}
+
+	function on_el2() {
+    document.getElementById("overlay_el2").style.display = "block";
+}
+
+function off_el2() {
+    document.getElementById("overlay_el2").style.display = "none";
+}
+function on_el3() {
+    document.getElementById("overlay_el3").style.display = "block";
+}
+
+function off_el3() {
+    document.getElementById("overlay_el3").style.display = "none";
+}
+
+	function on_el4() {
+    document.getElementById("overlay_el4").style.display = "block";
+}
+
+function off_el4() {
+    document.getElementById("overlay_el4").style.display = "none";
+}
+function on_el5() {
+    document.getElementById("overlay_el5").style.display = "block";
+}
+
+function off_el5() {
+    document.getElementById("overlay_el5").style.display = "none";
+}
+
+	function on_el6() {
+    document.getElementById("overlay_el6").style.display = "block";
+}
+
+function off_el6() {
+    document.getElementById("overlay_el6").style.display = "none";
+}
+
+
+</script>	
+	
+	
+	
+<script>
+
+function filterst() {
+	 spinnerPage.render();
+	ROOT_PRODUCTS.innerHTML = "";
+	 ROOT_AVTOR.innerHTML = "";
+function render() {
+	
+	
+	
+	const productsStore = localStorageUtil.getProducts();
+
+	headerPage.render(productsStore.length);
+	productsPage.render();	
+}
+
+
+let pred = [];
+CATALOG = [];
+
+
+fetch('https://skyauto.me/cllbck/217669590/1687857/Rkt6UEdJYW44MEJVQW9MazJZY0Vadz0?api=1&sid=535939344')
+    .then(res => res.json())
+    .then(body => {
+		CATALOG = body.katalog;
+
+		setTimeout(() => {
+			spinnerPage.handleClear();
+			render();
+		}, 1000);
+    })
+    .catch(() => {
+        spinnerPage.handleClear();
+    	errorPage.render();
+    })
+
+
+}
+	
+	
+function filterob() {
+	 spinnerPage.render();
+	ROOT_PRODUCTS.innerHTML = "";
+	ROOT_AVTOR.innerHTML = "";
+function render() {
+	
+	
+	
+	const productsStore = localStorageUtil.getProducts();
+
+	headerPage.render(productsStore.length);
+	productsPage.render();	
+}
+
+
+let pred = [];
+CATALOG = [];
+
+
+fetch('https://skyauto.me/cllbck/217669590/1685371/aVZoRWlHQmdteS8yZitXajNjWFBGUT0?api=1&sid=535939344')
+    .then(res => res.json())
+    .then(body => {
+		CATALOG = body.katalog;
+
+		setTimeout(() => {
+			spinnerPage.handleClear();
+			render();
+		}, 1000);
+    })
+    .catch(() => {
+        spinnerPage.handleClear();
+    	errorPage.render();
+    })
+
+
+}	
+	
+	
+function filteravt() {
+	 spinnerPage.render();
+	ROOT_PRODUCTS.innerHTML = "";
+	
+	
+        ROOT_HEADER.innerHTML = "";
+	const productsStore = localStorageUtil.getProducts();
+	headerPage.render(productsStore.length);
+	
+	
+	avtorPage.render();
+	
+	function timav() {
+ spinnerPage.handleClear();
+	
+
+		
+		
+	     document.getElementById("player1").addEventListener("init",PlayerInit);
+   var player = new Playerjs({
+      id:"player1",
+      file:[
+         {"title":"Урок - 1 Hits 2022",file:"https://fs.getcourse.ru/fileservice/file/download/a/274014/sc/268/h/bba19f8162d3bd02fc6e2e1101c48a4e.mp4"},
+         {"title":"Урок - 2 Hits 90's",file:"https://fs.getcourse.ru/fileservice/file/download/a/280925/sc/349/h/81644955137650ae8738d8683138c539.mp4"},
+         {"title":"Урок - 3 Enigma",file:"https://plrjs.com/sample.mp4"}
+      ]
+   });
+   function PlayerInit(){
+      player.api("moveplaylist","playlist_container");
+   }	
+		
+		
+		
+		
+  
+
+		
+}
+
+setTimeout(timav, 1000);
+
+	
+	
+	 	
+
+
+
+
+}	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+	
+	
+	
+	
+	
+	
+	/* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+// Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+	
+	
+	
+	
+	
+	
+	</script>
+
+	
+	
+	
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+</html>
