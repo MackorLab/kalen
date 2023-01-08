@@ -7,7 +7,7 @@ class Header {
         const html = `
            
               
-  
+   <div class="hedr_sdvg">  
             
          <div class="month">      
   <ul>
@@ -30,7 +30,7 @@ class Header {
   <li>Суб.</li>
 </ul>
        
-                
+   </div>             
               
   
             
