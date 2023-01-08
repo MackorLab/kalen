@@ -19,7 +19,7 @@ class Products {
         const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
 
-        CATALOG.forEach(({ id, dey, dey_utr, dey_vech, color_utr, color_vech}) => {
+        CATALOG.forEach(({ id, dey, dey_utr, dey_vech, color_utr, color_vech, pop_vid}) => {
           let col_utr;
           let col_vech;  
             
@@ -88,12 +88,12 @@ htmlCatalog += `
 
 
 <li>
-  <div class="dropdown">
+  <div class="dropdown"  style="float:${pop_vid};">
   <a class="dropbtn">${dey}</a>
   <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="#">Утро 9 - 11МСК</a>
+    <a href="#">День 13 - 15МСК</a>
+    <a href="#">Вечер 17 -19МСК</a>
   </div>
 </div>
 
