@@ -88,7 +88,7 @@ htmlCatalog += `
 
 
 <li>
-  <div class="dropdown"  style="float:${pop_vid};">
+  <div class="dropdown">
   <a class="dropbtn">${dey}</a>
   <div class="dropdown-content">
     <a href="#">Утро 9 - 11МСК</a>
