@@ -5,7 +5,7 @@ class Header {
 
     render(count) {
         const html = `
-            <div class="header-container">
+           
                 
   
             
@@ -33,7 +33,7 @@ class Header {
                 
                 
   
-            </div>
+            
         `;
 
         ROOT_HEADER.innerHTML = html;
