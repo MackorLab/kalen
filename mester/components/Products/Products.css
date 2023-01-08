@@ -1,9 +1,3 @@
-
-
-
-
-
-
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
@@ -11,9 +5,8 @@ body {font-family: Verdana, sans-serif;}
 .month {
     padding: 70px 25px;
     width: 100%;
-    background: #82a3ad;
+    background: #1abc9c;
     text-align: center;
-    
 }
 
 .month ul {
@@ -52,7 +45,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .days {
-    padding: 30px 0;
+    padding: 10px 0;
     background: #eee;
     margin: 0;
 }
@@ -63,13 +56,13 @@ body {font-family: Verdana, sans-serif;}
     width: 13.6%;
     text-align: center;
     margin-bottom: 5px;
-    font-size:22px;
+    font-size:12px;
     color: #777;
 }
 
 .days li .active {
- 
-     
+    padding: 5px;
+    background: #1abc9c;
     color: white !important
 }
 
@@ -87,14 +80,10 @@ body {font-family: Verdana, sans-serif;}
     .weekdays li, .days li {width: 12.2%;}
 }
 
-
-
-
-
 .dropbtn {
    
     color: white;
-    padding: 10px;
+    padding: 0px;
     font-size: 26px;
     border: none;
     
@@ -127,3 +116,5 @@ body {font-family: Verdana, sans-serif;}
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
