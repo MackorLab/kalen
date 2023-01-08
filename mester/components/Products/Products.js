@@ -127,9 +127,9 @@ htmlCatalog += `
             
 
         const html = `
-            <ul class="days"> 
+            
                 ${htmlCatalog}
-           </ul> 
+           
         `;
 
         ROOT_PRODUCTS.innerHTML = html;
