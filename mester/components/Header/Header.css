@@ -5,9 +5,8 @@ body {font-family: Verdana, sans-serif;}
 .month {
     padding: 70px 25px;
     width: 100%;
-    background: #82a3ad;
+    background: #1abc9c;
     text-align: center;
-    
 }
 
 .month ul {
@@ -46,7 +45,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .days {
-    padding: 30px 0;
+    padding: 10px 0;
     background: #eee;
     margin: 0;
 }
@@ -57,15 +56,15 @@ body {font-family: Verdana, sans-serif;}
     width: 13.6%;
     text-align: center;
     margin-bottom: 5px;
-    font-size:22px;
+    font-size:12px;
     color: #777;
 }
-
 .days li .active {
- 
-     
+    padding: 5px;
+    background: #1abc9c;
     color: white !important
 }
+
 
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
@@ -80,3 +79,4 @@ body {font-family: Verdana, sans-serif;}
 @media screen and (max-width: 290px) {
     .weekdays li, .days li {width: 12.2%;}
 }
+
