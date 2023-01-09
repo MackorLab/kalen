@@ -62,7 +62,7 @@ ROOT_SHOPPING.innerHTML = html;
                         ${htmlCatalog}
                         <tr>
                             <td class="shopping-element__name">💥 Сумма:</td>
-                            <td class="shopping-element__price">${sumCatalog.toLocaleString()} ₽</td>
+                            <td class="shopping-element__price">${datas} ₽</td>
                         </tr>
                     </table>
                    
