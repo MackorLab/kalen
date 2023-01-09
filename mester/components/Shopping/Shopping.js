@@ -23,7 +23,7 @@ var reloads;
                     htmlCatalog += `
                         <tr>
                             <td class="shopping-element__name">⚡️ ${name}</td>
-                            <td class="shopping-element__price">${datas_hen} ₽</td>
+                            <td class="shopping-element__price">${datas} ₽</td>
                         </tr>
                     `;
                     sumCatalog += price;
@@ -44,7 +44,7 @@ if (sumCatalog > 0) {
           ${htmlCatalog}
           <tr>
               <td class="shopping-element__name">💥 Сумма:</td>
-              <td class="shopping-element__price">${datas_hen} ₽</td>
+              <td class="shopping-element__price">${datas} ₽</td>
           </tr>
       </table>
       <button type="button" id="submits" class="btn btn-outline-warning" onclick="alerted();">Оформить заказ</button>
@@ -62,7 +62,7 @@ ROOT_SHOPPING.innerHTML = html;
                         ${htmlCatalog}
                         <tr>
                             <td class="shopping-element__name">💥 Сумма:</td>
-                            <td class="shopping-element__price">${datas_hen} ₽</td>
+                            <td class="shopping-element__price">${datas} ₽</td>
                         </tr>
                     </table>
                    
