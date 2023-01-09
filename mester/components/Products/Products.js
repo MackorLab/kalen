@@ -1,6 +1,9 @@
+var datas = 25;
+
+
 class Products {
 	
-	var datas = 25;
+	
 
 	
 
