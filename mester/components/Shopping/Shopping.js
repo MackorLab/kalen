@@ -16,7 +16,22 @@ var reloads;
                         
                         <tr>
             
-                        
+  <label class="container_sho" style = "display:block" >One
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho">Two
+  <input type="radio" name="radio">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho">Three
+  <input type="radio" name="radio">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho">Four
+  <input type="radio" name="radio">
+  <span class="checkmark_sho"></span>
+</label>
                         
                         
                             <td class="shopping-element__name">💥 ${dey}</td>
