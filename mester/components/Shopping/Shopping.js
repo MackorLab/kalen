@@ -16,23 +16,19 @@ var reloads;
                         
                         <tr>
             
-  <label class="container_sho" style = "display:block" >One
+  <label class="container_sho" style = "display:block" >Онлайн встреча 9 - 11 МСК
   <input type="radio" checked="checked" name="radio">
   <span class="checkmark_sho"></span>
 </label>
-<label class="container_sho">Two
+<label class="container_sho">Онлайн встреча 13 - 15 МСК
   <input type="radio" name="radio">
   <span class="checkmark_sho"></span>
 </label>
-<label class="container_sho">Three
+<label class="container_sho">Онлайн встреча 17 - 19 МСК
   <input type="radio" name="radio">
   <span class="checkmark_sho"></span>
 </label>
-<label class="container_sho">Four
-  <input type="radio" name="radio">
-  <span class="checkmark_sho"></span>
-</label>
-                        
+           
                         
                             
                         </tr>
