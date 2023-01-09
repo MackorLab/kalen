@@ -19,7 +19,7 @@ var reloads;
             
     
             datas.forEach(({ dey_utr, dey_dey, dey_vech }) => {
-                if (productsStore.indexOf(id) !== -1) {
+                
                     htmlCatalog += `
                         <tr>
                             <td class="shopping-element__name">⚡️ ${dey_dey}</td> 
@@ -31,7 +31,7 @@ var reloads;
                  sumCat = dey_dey;
                    
                     
-                }
+              
             });
     
            
