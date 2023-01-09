@@ -6,7 +6,7 @@ var reloads;
             ROOT_SHOPPING.innerHTML = '';
         }
     
-        render(datas_hen) {
+        render() {
             const productsStore = localStorageUtil.getProducts();
            
             
