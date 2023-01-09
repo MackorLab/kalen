@@ -7,55 +7,27 @@ var reloads;
         }
     
         render() {
-            const productsStore = localStorageUtil.getProducts();
-           
-            
-            
-             let htmlCatalog = '';
-             let sumCatalog = 0;
-    
-            
-            
-            
-    
-            CATALOG.forEach(({ dey_utr, dey_dey, dey_vech }) => {
-                
-                    htmlCatalog += `
-                        <tr>
-                            <td class="shopping-element__name">⚡️ ${dey_dey}</td> 
-                            <td class="shopping-element__price">${dey_vech}</td>
-                            <td class="shopping-element__price">${dey_vech}</td>
-                        </tr>
-                    `;
-                    sumCatalog += dey_utr;
-                 sumCat = dey_dey;
-                   
-                    
-              
-            });
-    
-           
-           
-               
 
   const html = `
-  <div class="shopping-container">
-<a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/F3SMJxY/shopping-cart-remove-12830-1.png" alt="shopping-cart"></a>
-      
-      <table>
-          ${htmlCatalog}
-          <tr>
-              <td class="shopping-element__name">💥 Сумма:</td>
-              <td class="shopping-element__price"> ${dey_vech}</td>
-          </tr>
-      </table>
-      <button type="button" id="submits" class="btn btn-outline-warning" onclick="alerted();">Оформить заказ</button>
-  </div>
-`;
+                <div class="shopping-container">
+              <a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/F3SMJxY/shopping-cart-remove-12830-1.png" alt="shopping-cart"></a>
+                    
+                    <table>
+                        ${htmlCatalog}
+                        <tr>
+                            <td class="shopping-element__name">💥 Сумма:</td>
+                            <td class="shopping-element__price">${sumCatalog.toLocaleString()} ₽</td>
+                        </tr>
+                    </table>
+                   
+                </div>
+            `;
+    
+             ROOT_SHOPPING.innerHTML = html;
 
-ROOT_SHOPPING.innerHTML = html;
 
-
+           
+           
            
            
            
@@ -114,5 +86,4 @@ fetch('https://skyauto.me/cllbck/' + p + '?api=1&sid=' + vkid + '&price=' + sumC
       
         
     }
-
 
