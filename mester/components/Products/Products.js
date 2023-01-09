@@ -65,7 +65,7 @@ htmlCatalog += `
 
 <li>
   <div class="dropdown">
-  <a class="dropbtn" style = "background: linear-gradient(${col_utr} 50%, ${col_vech} 50%); padding: 1px ${otstup}px 1px ${otstup}px; color: red;">${dey}</a>
+  <a class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 20%, ${col_vech} 20%, ${col_vech} 80%, ${col_utr} 80%); padding: 1px ${otstup}px 1px ${otstup}px; color: red;">${dey}</a>
   <div class="dropdown-content">
     <a href="#">9 - 11МСК</a>
     <a href="#">13 - 15МСК</a>
