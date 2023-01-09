@@ -53,7 +53,7 @@ if (dey_dey === 0) {
 		
 if (dey_vech === 0) {
 col_vech = "#33cc33";
-} else if (dey_vechy === 1) {
+} else if (dey_vech === 1) {
     col_vech = "#cc3333";
 } else if (dey_vech === 2) {
    col_vech = "#b2d6b2";
