@@ -21,13 +21,14 @@ class Header {
 </div>
 
 <ul class="weekdays">
-  <li>Вс.</li>
+ 
   <li>Пн.</li>
   <li>Вт.</li>
   <li>Ср.</li>
-  <li>Чет.</li>
+  <li>Чт.</li>
   <li>Пт.</li>
-  <li>Суб.</li>
+  <li>Сб.</li> 
+  <li>Вс.</li>
 </ul>
        
    </div>             
