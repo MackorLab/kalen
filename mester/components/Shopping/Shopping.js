@@ -15,8 +15,14 @@ var reloads;
                     <table>
                         
                         <tr>
-                            <td class="shopping-element__name">💥 ${dey}Сумма:</td>
-                           
+            
+                        
+                        
+                        
+                            <td class="shopping-element__name">💥 ${dey}</td>
+                           <td class="shopping-element__name">💥 ${dey_utr}</td>
+                           <td class="shopping-element__name">💥 ${dey_dey}</td>
+                           <td class="shopping-element__name">💥 ${vdey_vech}</td>
                         </tr>
                     </table>
                    
