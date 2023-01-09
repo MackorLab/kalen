@@ -1,6 +1,7 @@
 class Header {
-    handlerOpenShoppingPage() {
-        shoppingPage.render();
+    handlerOpenShoppingPage(datas) {
+        var datas_hen = datas;
+        shoppingPage.render(datas_hen);
     }
 
     render(count) {
