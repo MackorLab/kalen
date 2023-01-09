@@ -13,10 +13,10 @@ var reloads;
               <a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/F3SMJxY/shopping-cart-remove-12830-1.png" alt="shopping-cart"></a>
                     
                     <table>
-                        ${htmlCatalog}
+                        
                         <tr>
                             <td class="shopping-element__name">💥 Сумма:</td>
-                            <td class="shopping-element__price">${sumCatalog.toLocaleString()} ₽</td>
+                           
                         </tr>
                     </table>
                    
