@@ -23,7 +23,7 @@ var reloads;
                     htmlCatalog += `
                         <tr>
                             <td class="shopping-element__name">⚡️ ${dey_dey}</td> 
-                            <td class="shopping-element__price">${datas}</td>
+                            <td class="shopping-element__price">${dey_vech}</td>
                             <td class="shopping-element__price">${dey_vech}</td>
                         </tr>
                     `;
