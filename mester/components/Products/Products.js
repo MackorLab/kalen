@@ -1,4 +1,4 @@
-var datas = 25;
+
 
 
 class Products {
@@ -26,7 +26,7 @@ class Products {
           let col_utr;
           let col_vech;  
           let otstup;  
-            
+           var datas = dey; 
 if (dey_utr === 0) {
    col_utr = "#33cc33";
  
@@ -67,7 +67,7 @@ htmlCatalog += `
 
 
 <li>
-<a onclick="headerPage.handlerOpenShoppingPage();" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_vech} 34%, ${col_vech} 66%, ${col_utr} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${dey}</a>
+<a onclick="headerPage.handlerOpenShoppingPage(datas);" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_vech} 34%, ${col_vech} 66%, ${col_utr} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${dey}</a>
 </li>
 
 
