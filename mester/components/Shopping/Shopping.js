@@ -18,7 +18,7 @@ var reloads;
             
             
     
-            datas.forEach(({ dey_utr, dey_dey, dey_vech }) => {
+            CATALOG.forEach(({ dey_utr, dey_dey, dey_vech }) => {
                 
                     htmlCatalog += `
                         <tr>
