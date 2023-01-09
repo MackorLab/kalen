@@ -29,11 +29,14 @@ class Products {
           let otstup;  
           
 if (dey_utr === 0) {
-   col_utr = "#33cc33";
- 
-} else {
-    col_utr = "#cc3333";
-}
+  col_utr = "#33cc33";
+} else if (dey_utr === 1) {
+   col_utr = "#cc3333";
+} else if (dey_utr === 2) {
+   col_utr = "#b2d6b2";
+}  else {
+   col_utr = "#b2d6b2";
+}	
 
 		
 if (dey_dey === 0) {
@@ -52,7 +55,6 @@ if (dey_vech === 0) {
    col_vech = "#cc3333";
 }   
 
-		
 		
 		
 		
