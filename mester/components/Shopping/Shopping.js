@@ -35,7 +35,8 @@ var reloads;
     
            
            
-           
+         }
+    };        
 
     
     
