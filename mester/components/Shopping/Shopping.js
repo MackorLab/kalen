@@ -18,16 +18,17 @@ var reloads;
             
             
     
-            CATALOG.forEach(({ id, name, price }) => {
+            datas.forEach(({ dey_utr, dey_dey, dey_vech }) => {
                 if (productsStore.indexOf(id) !== -1) {
                     htmlCatalog += `
                         <tr>
-                            <td class="shopping-element__name">⚡️ ${name}</td> 
+                            <td class="shopping-element__name">⚡️ ${dey_dey}</td> 
                             <td class="shopping-element__price">${datas}</td>
+                            <td class="shopping-element__price">${dey_vech}</td>
                         </tr>
                     `;
-                    sumCatalog += price;
-                 sumCat = sumCatalog;
+                    sumCatalog += dey_utr;
+                 sumCat = dey_dey;
                    
                     
                 }
@@ -45,7 +46,7 @@ var reloads;
           ${htmlCatalog}
           <tr>
               <td class="shopping-element__name">💥 Сумма:</td>
-              <td class="shopping-element__price"> ${datas}</td>
+              <td class="shopping-element__price"> ${dey_vech}</td>
           </tr>
       </table>
       <button type="button" id="submits" class="btn btn-outline-warning" onclick="alerted();">Оформить заказ</button>
