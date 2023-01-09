@@ -38,13 +38,21 @@ if (dey_utr === 0) {
    col_utr = "#b2d6b2";
 }	
 
-		
+
 if (dey_dey === 0) {
-   col_dey = "#33cc33";
- 
-} else {
+ col_dey = "#33cc33";
+} else if (dey_dey === 1) {
    col_dey = "#cc3333";
-}   
+} else if (dey_dey === 2) {
+   col_dey = "#b2d6b2";
+}  else {
+   col_dey = "#b2d6b2";
+}	
+		
+		
+		
+		
+		
 		
 		
 		
