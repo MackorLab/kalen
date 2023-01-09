@@ -77,7 +77,7 @@ htmlCatalog += `
 
 
 <li>
-<a onclick="openPop_dey_${dey}();" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_dey} 34%, ${col_dey} 66%, ${col_utr} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${dey}</a>
+<a onclick="openPop_dey_${dey}();" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_dey} 34%, ${col_dey} 66%, ${col_vech} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${dey}</a>
 </li>
 
 
