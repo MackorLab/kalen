@@ -1,5 +1,5 @@
 
-var datas; 
+
 
 class Products {
 	
@@ -26,7 +26,7 @@ class Products {
           let col_utr;
           let col_vech;  
           let otstup;  
-          datas = dey; 
+          
 if (dey_utr === 0) {
    col_utr = "#33cc33";
  
