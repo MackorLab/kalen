@@ -15,7 +15,7 @@ var reloads;
                     <table>
                         
                         <tr>
-                            <td class="shopping-element__name">💥 Сумма:</td>
+                            <td class="shopping-element__name">💥 ${datas}Сумма:</td>
                            
                         </tr>
                     </table>
