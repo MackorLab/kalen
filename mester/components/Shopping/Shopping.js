@@ -28,64 +28,15 @@ var reloads;
                     `;
                     sumCatalog += price;
                  sumCat = sumCatalog;
+                  ROOT_SHOPPING.innerHTML = htmlCatalog;   
+                    
                 }
             });
     
            
            
            
-           
-if (sumCatalog > 0) {
-  const html = `
-  <div class="shopping-container">
-<a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/F3SMJxY/shopping-cart-remove-12830-1.png" alt="shopping-cart"></a>
-      
-      <table>
-          ${htmlCatalog}
-          <tr>
-              <td class="shopping-element__name">💥 Сумма:</td>
-              <td class="shopping-element__price"> ${datas}</td>
-          </tr>
-      </table>
-      <button type="button" id="submits" class="btn btn-outline-warning" onclick="alerted();">Оформить заказ</button>
-  </div>
-`;
 
-ROOT_SHOPPING.innerHTML = html;
-
-} else {
-  const html = `
-                <div class="shopping-container">
-              <a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/F3SMJxY/shopping-cart-remove-12830-1.png" alt="shopping-cart"></a>
-                    
-                    <table>
-                        ${htmlCatalog}
-                        <tr>
-                            <td class="shopping-element__name">💥 Сумма:</td>
-                            <td class="shopping-element__price"> ${datas}</td>
-                        </tr>
-                    </table>
-                   
-                </div>
-            `;
-    
-             ROOT_SHOPPING.innerHTML = html;
-
-}
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-           
-          
-        }
-    };
     
     
     
