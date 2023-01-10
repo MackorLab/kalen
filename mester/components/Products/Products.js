@@ -27,7 +27,7 @@ class Products {
 	  let col_dey;	
           let col_vech;  
           let otstup;
-	  let deys;
+	  let cards;
 	  let d;
 	  let o;
 		
@@ -98,7 +98,7 @@ htmlCatalog += `
 
 
 <li>
-<a onclick="openPop_dey_${deys}();" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_dey} 34%, ${col_dey} 66%, ${col_vech} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${deys}</a>
+<a onclick="openPop_dey_${cards}();" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_dey} 34%, ${col_dey} 66%, ${col_vech} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${dey}</a>
 </li>
 
 
