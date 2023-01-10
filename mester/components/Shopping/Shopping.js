@@ -361,8 +361,8 @@ Toastify({
     
     let regex = /^((8|\+374|\+994|\+995|\+375|\+7|\+380|\+38|\+996|\+998|\+993)[\- ]?)?\(?\d{3,5}\)?[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}(([\- ]?\d{1})?[\- ]?\d{1})?$/;
 
-
-     if(!regex.test(forms.telephone.value){
+let phone = forms.telephone.value;
+if(!regex.test(phone){
 console.log('Не соответствует');
 }else{
 console.log('Соответствует');
