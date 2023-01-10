@@ -374,7 +374,7 @@ if (!validatePhone(phone)){
   console.log('Не соответствует');
 }else{
   console.log('Соответствует');
-}     
+};     
         
     }
 
