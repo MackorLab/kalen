@@ -10,6 +10,30 @@ var reloads;
          let urt_s;
          let dey_s;
          let vech_s;
+         let chec_utr = "";
+         let chec_dey = "";   
+         let chec_vech = "";
+            
+            
+if (dey_utr == 0) {
+  chec_utr = "checked";  
+ 
+} else if (dey_s == 0) {
+   chec_dey = "checked";  
+  
+} else if (vech_s == 0) {
+   chec_vech = "checked";  
+  
+} else {
+    
+ 
+}  
+            
+            
+            
+            
+            
+            
             
 if (dey_utr == 0) {
  urt_s = "block";
@@ -59,15 +83,15 @@ if (dey_vech == 0) {
                         <tr>
             
   <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
-  <input type="radio" id="rid1" name="rate" value="rid1">
+  <input type="radio" id="rid1" name="rate" value="rid1" checked="${chec_utr}">
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
-  <input type="radio" id="rid2" name="rate" value="rid2">
+  <input type="radio" id="rid2" name="rate" value="rid2" checked="${chec_dey}">
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
-  <input type="radio" id="rid3" name="rate" value="rid3">
+  <input type="radio" id="rid3" name="rate" value="rid3" checked="${chec_vech}">
   <span class="checkmark_sho"></span>
 </label>
            
