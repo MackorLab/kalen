@@ -154,7 +154,9 @@ if (dey_vech == 0) {
         
  var pro = localStorageUtil.getProducts(); 
      
-       //console.log(pro)
+      let sumCat = document.getElementById('name');
+        
+        //console.log(pro)
        //console.log(sumCat)
      
     
