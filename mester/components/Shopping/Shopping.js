@@ -7,6 +7,16 @@ var reloads;
         }
     
         render() {
+         let urt_s;
+            let dey_s;
+            let vech_s;
+            
+if (dey_utr == 0) {
+ urt_s = "block";
+} else {
+ urt_s = "none"; 
+}
+            
 
   const html = `
                 <div class="shopping-container">
@@ -16,15 +26,15 @@ var reloads;
                         
                         <tr>
             
-  <label class="container_sho" style = "display:block">Онлайн встреча 9 - 11 МСК
+  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
   <input type="radio" checked="checked" name="radio">
   <span class="checkmark_sho"></span>
 </label>
-<label class="container_sho" style = "display:none">Онлайн встреча 13 - 15 МСК
+<label class="container_sho" style = "display:block">Онлайн встреча 13 - 15 МСК
   <input type="radio" name="radio">
   <span class="checkmark_sho"></span>
 </label>
-<label class="container_sho" style = "display:none">Онлайн встреча 17 - 19 МСК
+<label class="container_sho" style = "display:block">Онлайн встреча 17 - 19 МСК
   <input type="radio" name="radio">
   <span class="checkmark_sho"></span>
 </label>
