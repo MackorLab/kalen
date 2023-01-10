@@ -59,7 +59,7 @@ if (dey_vech == 0) {
                         <tr>
             
   <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
-  <input type="radio" name="radio">
+  <input type="radio" id="rid1" name="radio">
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
@@ -153,17 +153,18 @@ if (dey_vech == 0) {
 
 
     function alerted(){
-     spinnerPage.render();
+     //spinnerPage.render();
         
  var pro = localStorageUtil.getProducts(); 
      let sumCat;
      
 
-       var form = document.getElementById('form');  
+       var form = document.getElementById('name');  
         
-        
+        var rid1 = document.getElementById('rid1'); 
         
         console.log(form)
+        console.log(rid1)
        //console.log(sumCat)
      
     
