@@ -241,7 +241,7 @@ if (dey_utr == 0) {
     
     
     
-   ROOT_ALERT.innerHTML = htm_test; 
+  
     
     
 }  
