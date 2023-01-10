@@ -37,10 +37,13 @@ if (dey_vech == 0) {
                   
                   
                   
-                <form>
-   <p>Введите IP-адрес:</p>
-   <p><input name="ip" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"></p>
-   <p><input type="submit" value="Отправить"></p>
+              
+ <form name='theForm'>
+<input type=radio name="gender" value="Male">Male
+<input type=radio name="gender" value="Female">Female
+<input type=radio name="gender" value="Evasive">Not Specified
+
+ 
     
                   
                   
@@ -95,10 +98,10 @@ if (dey_vech == 0) {
    </div> 
   
   </div>   
-             
+   </form>          
                    
          
-  </form>                   
+                   
                    
                    
                    
