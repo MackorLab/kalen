@@ -60,24 +60,7 @@ if (dey_vech == 0) {
                    
                    
                    
-                   
-                   
-         
-                   
-                   
-                   
-                   
-                </div>
-            `;
-    
-             ROOT_SHOPPING.innerHTML = html;
-
-
-           
-           
-           
-           
-<div class="accordion"> 
+                <div class="accordion"> 
    <div class="tab">
     <input type="checkbox" id="tab1" name="tab-group">
     <label for="tab1" class="tab-title">Что такое HTML5?</label> 
@@ -108,7 +91,24 @@ if (dey_vech == 0) {
     </section>
    </div>
   </div>   
+             
+                   
+         
+                   
+                   
+                   
+                   
+                </div>
+            `;
+    
+             ROOT_SHOPPING.innerHTML = html;
+
+
            
+           
+           
+           
+ 
            
            
            
