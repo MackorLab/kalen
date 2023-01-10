@@ -15,6 +15,37 @@ var reloads;
          let chec_vech = "";
           var html_chek = ``;  
             
+            
+            
+            
+ if (dey_utr == 0) {
+    
+ urt_s = "block";
+} else {
+ urt_s = "none"; 
+}
+  
+if (dey_dey == 0) {
+ dey_s = "block";
+} else {
+ dey_s = "none"; 
+}            
+ 
+if (dey_vech == 0) {
+ vech_s = "block";
+} else {
+ vech_s = "none"; 
+}     
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 if (dey_utr == 0) {
   html_chek = `
   
@@ -119,24 +150,7 @@ if (dey_utr == 0) {
             
             
             
-if (dey_utr == 0) {
-    
- urt_s = "block";
-} else {
- urt_s = "none"; 
-}
-  
-if (dey_dey == 0) {
- dey_s = "block";
-} else {
- dey_s = "none"; 
-}            
- 
-if (dey_vech == 0) {
- vech_s = "block";
-} else {
- vech_s = "none"; 
-}            
+         
 
   const html = `
                 <div class="shopping-container">
