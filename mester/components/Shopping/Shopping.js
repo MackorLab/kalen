@@ -13,19 +13,100 @@ var reloads;
          let chec_utr = "";
          let chec_dey = "";   
          let chec_vech = "";
-            
+          var html_chek = ``;  
             
 if (dey_utr == 0) {
-  chec_utr = "checked";  
-    console.log("chec_utr1") 
+  html_chek = `
+  
+    <table>
+                        
+                        <tr>
+            
+  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
+  <input type="radio" id="rid1" name="rate" value="rid1" checked="checked">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
+  <input type="radio" id="rid2" name="rate" value="rid2">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
+  <input type="radio" id="rid3" name="rate" value="rid3">
+  <span class="checkmark_sho"></span>
+</label>
+           
+                        
+                            
+                        </tr>
+                    </table>
+  
+  
+  
+  
+  `;
  
 } else if (dey_dey == 0) {
-   chec_dey = "checked";  
-     console.log("chec_utr2") 
+   
+    html_chek = `
+  
+    <table>
+                        
+                        <tr>
+            
+  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
+  <input type="radio" id="rid1" name="rate" value="rid1">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
+  <input type="radio" id="rid2" name="rate" value="rid2" checked="checked">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
+  <input type="radio" id="rid3" name="rate" value="rid3">
+  <span class="checkmark_sho"></span>
+</label>
+           
+                        
+                            
+                        </tr>
+                    </table>
+  
+  
+  
+  
+  `;
   
 } else if (dey_vech == 0) {
-   chec_vech = "checked"; 
-     console.log("chec_utr3") 
+  
+     html_chek = `
+  
+    <table>
+                        
+                        <tr>
+            
+  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
+  <input type="radio" id="rid1" name="rate" value="rid1">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
+  <input type="radio" id="rid2" name="rate" value="rid2">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
+  <input type="radio" id="rid3" name="rate" value="rid3" checked="checked">
+  <span class="checkmark_sho"></span>
+</label>
+           
+                        
+                            
+                        </tr>
+                    </table>
+  
+  
+  
+  
+  `; 
+    
   
 } else {
     
@@ -81,28 +162,8 @@ if (dey_vech == 0) {
     
                   
                   
-                  
-                  <table>
-                        
-                        <tr>
-            
-  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
-  <input type="radio" id="rid1" name="rate" value="rid1" checked="${chec_utr}">
-  <span class="checkmark_sho"></span>
-</label>
-<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
-  <input type="radio" id="rid2" name="rate" value="rid2" checked="${chec_dey}">
-  <span class="checkmark_sho"></span>
-</label>
-<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
-  <input type="radio" id="rid3" name="rate" value="rid3" checked="${chec_vech}">
-  <span class="checkmark_sho"></span>
-</label>
-           
-                        
-                            
-                        </tr>
-                    </table>
+       ${html_chek}           
+                
                    
                    
                    
