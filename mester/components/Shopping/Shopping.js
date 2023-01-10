@@ -59,15 +59,15 @@ if (dey_vech == 0) {
                         <tr>
             
   <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
-  <input type="radio" id="rid1">
+  <input type="radio" id="rid1" name="rate" value="rid1">
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
-  <input type="radio" id="rid2">
+  <input type="radio" id="rid2" name="rate" value="rid2">
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
-  <input type="radio" id="rid3">
+  <input type="radio" id="rid3" name="rate" value="rid3">
   <span class="checkmark_sho"></span>
 </label>
            
@@ -172,14 +172,14 @@ function per_dan(){
        var forms = document.getElementById('form');  
         
         
-        
+    var cech    document.querySelector('input[name="rate"]:checked').value;
         
         console.log(forms.name.value);
         console.log(forms.telephone.value);
         console.log(forms.rid1.value);
          console.log(forms.rid2.value);
          console.log(forms.rid3.value);
-       //console.log(sumCat)
+       console.log(cech)
      
     
     
