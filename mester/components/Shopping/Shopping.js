@@ -145,13 +145,13 @@ var per;
 
 function polit_con(){
     polit = 1;
-    console.log(polit);
+    console.log(polit)
 
 };
 
 function per_dan(){
     per = 1;
-     console.log(per);
+     console.log(per)
 };
 
 
