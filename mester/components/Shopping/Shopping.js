@@ -140,9 +140,19 @@ if (dey_vech == 0) {
     
     const shoppingPage = new Shopping();
     
-  
+let polit;
+let per;
 
+function polit_con(){
+    polit = 1;
+    console.log(polit);
 
+};
+
+function per_dan(){
+    per = 1;
+     console.log(per);
+};
 
 
 
