@@ -63,11 +63,11 @@ if (dey_vech == 0) {
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
-  <input type="radio" name="radio">
+  <input type="radio" id="rid2" name="radio">
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
-  <input type="radio" name="radio">
+  <input type="radio" id="rid3" name="radio">
   <span class="checkmark_sho"></span>
 </label>
            
@@ -161,11 +161,14 @@ if (dey_vech == 0) {
 
        var forms = document.getElementById('form');  
         
-        var rid1 = document.getElementById('rid1'); 
         
         
-        console.log(forms.name.value)
-        console.log(rid1)
+        
+        console.log(forms.name.value);
+        console.log(forms.telephone.value);
+        console.log(forms.rid1.value);
+         console.log(forms.rid2.value);
+         console.log(forms.rid3.value);
        //console.log(sumCat)
      
     
