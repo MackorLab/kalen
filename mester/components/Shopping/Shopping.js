@@ -33,7 +33,19 @@ if (dey_vech == 0) {
                 <div class="shopping-container">
               <a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/WFkZT76/imgonline-com-ua-Resize-g-CNOFAAJBXK.png" alt="shopping-cart"></a>
                     
-                    <table>
+                  
+                  
+                  
+                  
+                <form>
+   <p>Введите IP-адрес:</p>
+   <p><input name="ip" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"></p>
+   <p><input type="submit" value="Отправить"></p>
+    
+                  
+                  
+                  
+                  <table>
                         
                         <tr>
             
@@ -86,7 +98,7 @@ if (dey_vech == 0) {
              
                    
          
-                   
+  </form>                   
                    
                    
                    
