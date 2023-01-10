@@ -159,12 +159,12 @@ if (dey_vech == 0) {
      let sumCat;
      
 
-       var form = document.getElementById('name');  
+       var forms = document.getElementById('form');  
         
         var rid1 = document.getElementById('rid1'); 
         
         
-        console.log(form.name.value)
+        console.log(forms.name.value)
         console.log(rid1)
        //console.log(sumCat)
      
