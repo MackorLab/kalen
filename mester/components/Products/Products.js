@@ -33,7 +33,7 @@ class Products {
 		
 	d = Number(id);
 	o = Number(sdvig);	
-	deys = 	d - o;
+	cards = 	d - o;
           
 if (dey_utr === 0) {
   col_utr = "#33cc33";
