@@ -40,13 +40,13 @@ if (dey_vech == 0) {
               
  <form name='theForm'>
 <fieldset>
-    <legend>Контактная информация</legend>
-      
-      <input id="name"><br>
     
+      <p> Имя</p>
+      <input id="name"><br>
+        <p> Телефон</p>
       <input id="telephone"><br>
       
-      <input id="email"><br>
+      <br>
   </fieldset>
 
  
