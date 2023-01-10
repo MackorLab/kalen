@@ -22,7 +22,7 @@ class Products {
         const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
 
-        CATALOG.forEach(({ month, dey, dey_utr, dey_dey, dey_vech, sdvig}) => {
+        CATALOG.forEach(({ id, month, dey, dey_utr, dey_dey, dey_vech, sdvig}) => {
           let col_utr;
 	  let col_dey;	
           let col_vech;  
@@ -31,7 +31,7 @@ class Products {
 	  let d;
 	  let o;
 		
-	d = Number(dey);
+	d = Number(id);
 	o = Number(sdvig);	
 	deys = 	d - o;
           
