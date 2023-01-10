@@ -204,10 +204,10 @@ if (dey_utr == 0) {
 } else {
     
   var html_vivod = `
-  
+  <div class="shopping-container">
   <H3> К сожалению на на эту дату все забронированно! </H3>
   
-  
+  </div>
   
   `; 
 }  
