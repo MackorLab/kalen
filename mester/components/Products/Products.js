@@ -22,11 +22,18 @@ class Products {
         const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
 
-        CATALOG.forEach(({ id, dey, dey_utr, dey_dey, dey_vech, color_utr, color_vech, pop_vid}) => {
+        CATALOG.forEach(({ month, dey, dey_utr, dey_dey, dey_vech, sdvig}) => {
           let col_utr;
 	  let col_dey;	
           let col_vech;  
-          let otstup;  
+          let otstup;
+	  let deys;
+	  let d;
+	  let o;
+		
+	d = Number(dey);
+	o = Number(sdvig);	
+	deys = 	d - o;
           
 if (dey_utr === 0) {
   col_utr = "#33cc33";
@@ -91,7 +98,7 @@ htmlCatalog += `
 
 
 <li>
-<a onclick="openPop_dey_${dey}();" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_dey} 34%, ${col_dey} 66%, ${col_vech} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${dey}</a>
+<a onclick="openPop_dey_${deys}();" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_dey} 34%, ${col_dey} 66%, ${col_vech} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${deys}</a>
 </li>
 
 
