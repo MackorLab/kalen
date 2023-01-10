@@ -154,7 +154,17 @@ if (dey_vech == 0) {
         
  var pro = localStorageUtil.getProducts(); 
      
-      let sumCat = document.getElementById('name');
+     
+     
+      var sumCat = document.querySelector("form");
+  form.addEventListener("submit", function(event) {
+    console.log("Saving value", form.elements.value.value);
+    event.preventDefault();
+  });  
+        
+        
+        
+        
         
         //console.log(pro)
        //console.log(sumCat)
