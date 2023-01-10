@@ -42,7 +42,7 @@ if (dey_vech == 0) {
 <fieldset>
     
       <p> Имя</p>
-      <input id="name"><br>
+      <input id="name" name='name'><br>
         <p> Телефон</p>
       <input id="telephone"><br>
       
@@ -163,7 +163,8 @@ if (dey_vech == 0) {
         
         var rid1 = document.getElementById('rid1'); 
         
-        console.log(form)
+        
+        console.log(form.name.value)
         console.log(rid1)
        //console.log(sumCat)
      
