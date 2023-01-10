@@ -14,7 +14,9 @@ var reloads;
          let chec_dey = "";   
          let chec_vech = "";
             var html_vivod = ``; 
-          var html_chek = ``; 
+          var html_chek = ``;
+            
+            var htm_test = ``;
             
           var html_Name_tel = `
   <div class="shopping-container">
@@ -212,14 +214,8 @@ if (dey_utr == 0) {
   
   
   
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-  
-  
+
+ 
   
   
   
@@ -228,6 +224,26 @@ if (dey_utr == 0) {
   
   
   `; 
+    
+    
+    htm_test = `
+    
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+  
+    
+    
+    `;
+    
+    
+    
+   ROOT_SPINNER.innerHTML = htm_test; 
+    
+    
 }  
             
             
@@ -260,6 +276,10 @@ if (dey_utr == 0) {
          
             `;
     
+            
+            
+            
+            
              ROOT_SHOPPING.innerHTML = html;
 
 
