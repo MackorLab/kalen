@@ -13,155 +13,14 @@ var reloads;
          let chec_utr = "";
          let chec_dey = "";   
          let chec_vech = "";
-          var html_chek = ``;  
+            var html_vivod = ``; 
+          var html_chek = ``; 
             
-            
-            
-            
- if (dey_utr == 0) {
-    
- urt_s = "block";
-} else {
- urt_s = "none"; 
-}
-  
-if (dey_dey == 0) {
- dey_s = "block";
-} else {
- dey_s = "none"; 
-}            
- 
-if (dey_vech == 0) {
- vech_s = "block";
-} else {
- vech_s = "none"; 
-}     
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-if (dey_utr == 0) {
-  html_chek = `
-  
-    <table>
-                        
-                        <tr>
-            
-  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
-  <input type="radio" id="rid1" name="rate" value="rid1" checked="checked">
-  <span class="checkmark_sho"></span>
-</label>
-<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
-  <input type="radio" id="rid2" name="rate" value="rid2">
-  <span class="checkmark_sho"></span>
-</label>
-<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
-  <input type="radio" id="rid3" name="rate" value="rid3">
-  <span class="checkmark_sho"></span>
-</label>
-           
-                        
-                            
-                        </tr>
-                    </table>
-  
-  
-  
-  
-  `;
- 
-} else if (dey_dey == 0) {
-   
-    html_chek = `
-  
-    <table>
-                        
-                        <tr>
-            
-  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
-  <input type="radio" id="rid1" name="rate" value="rid1">
-  <span class="checkmark_sho"></span>
-</label>
-<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
-  <input type="radio" id="rid2" name="rate" value="rid2" checked="checked">
-  <span class="checkmark_sho"></span>
-</label>
-<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
-  <input type="radio" id="rid3" name="rate" value="rid3">
-  <span class="checkmark_sho"></span>
-</label>
-           
-                        
-                            
-                        </tr>
-                    </table>
-  
-  
-  
-  
-  `;
-  
-} else if (dey_vech == 0) {
-  
-     html_chek = `
-  
-    <table>
-                        
-                        <tr>
-            
-  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
-  <input type="radio" id="rid1" name="rate" value="rid1">
-  <span class="checkmark_sho"></span>
-</label>
-<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
-  <input type="radio" id="rid2" name="rate" value="rid2">
-  <span class="checkmark_sho"></span>
-</label>
-<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
-  <input type="radio" id="rid3" name="rate" value="rid3" checked="checked">
-  <span class="checkmark_sho"></span>
-</label>
-           
-                        
-                            
-                        </tr>
-                    </table>
-  
-  
-  
-  
-  `; 
-    
-  
-} else {
-    
- 
-}  
-            
-            
-            
-            
-            
-            
-            
-         
-
-  const html = `
-                <div class="shopping-container">
+          var html_Name_tel = `
+  <div class="shopping-container">
               <a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/WFkZT76/imgonline-com-ua-Resize-g-CNOFAAJBXK.png" alt="shopping-cart"></a>
-                    
-                  
-                  
-                  
-                  
-              
- <form id="form"  name='theForm'>
+                             
+           <form id="form"  name='theForm'>
 <fieldset>
     
       <p> Имя</p>
@@ -171,17 +30,11 @@ if (dey_utr == 0) {
       
       <br>
   </fieldset>
-
- 
-    
-                  
-                  
-       ${html_chek}           
-                
-                   
-                   
-                   
-                   
+          
+          
+          `;    
+            
+         var html_but = `
                    
                    
                 <div class="accordion"> 
@@ -217,6 +70,170 @@ if (dey_utr == 0) {
                    
                    
                 </div>
+         
+         
+         `;    
+            
+ if (dey_utr == 0) {
+    
+ urt_s = "block";
+} else {
+ urt_s = "none"; 
+}
+  
+if (dey_dey == 0) {
+ dey_s = "block";
+} else {
+ dey_s = "none"; 
+}            
+ 
+if (dey_vech == 0) {
+ vech_s = "block";
+} else {
+ vech_s = "none"; 
+}     
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+if (dey_utr == 0) {
+    html_chek = `
+  
+    <table>
+                        
+                        <tr>
+            
+  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
+  <input type="radio" id="rid1" name="rate" value="rid1">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
+  <input type="radio" id="rid2" name="rate" value="rid2" checked="checked">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
+  <input type="radio" id="rid3" name="rate" value="rid3">
+  <span class="checkmark_sho"></span>
+</label>
+           
+                        
+                            
+                        </tr>
+                    </table>
+  
+  
+  
+  
+  `;
+    
+   html_vivod = html_Name_tel + html_chek + html_but;
+ 
+} else if (dey_dey == 0) {
+   
+    html_chek = `
+  
+    <table>
+                        
+                        <tr>
+            
+  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
+  <input type="radio" id="rid1" name="rate" value="rid1">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
+  <input type="radio" id="rid2" name="rate" value="rid2" checked="checked">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
+  <input type="radio" id="rid3" name="rate" value="rid3">
+  <span class="checkmark_sho"></span>
+</label>
+           
+                        
+                            
+                        </tr>
+                    </table>
+  
+  
+  
+  
+  `;
+    
+   html_vivod = html_Name_tel + html_chek + html_but;
+    
+  
+} else if (dey_vech == 0) {
+  
+  html_chek = `
+  
+    <table>
+                        
+                        <tr>
+            
+  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
+  <input type="radio" id="rid1" name="rate" value="rid1">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
+  <input type="radio" id="rid2" name="rate" value="rid2" checked="checked">
+  <span class="checkmark_sho"></span>
+</label>
+<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
+  <input type="radio" id="rid3" name="rate" value="rid3">
+  <span class="checkmark_sho"></span>
+</label>
+           
+                        
+                            
+                        </tr>
+                    </table>
+  
+  
+  
+  
+  `;
+    
+   html_vivod = html_Name_tel + html_chek + html_but;
+  
+} else {
+    
+ 
+}  
+            
+            
+            
+            
+            
+            
+            
+         
+
+  const html = `
+               
+                  
+                  
+                  
+                  
+              
+
+
+ 
+    
+                  
+                  
+       ${html_vivod}           
+                
+                   
+                   
+                   
+                   
+         
             `;
     
              ROOT_SHOPPING.innerHTML = html;
