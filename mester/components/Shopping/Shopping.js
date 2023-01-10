@@ -205,6 +205,8 @@ if (dey_utr == 0) {
     
   var html_vivod = `
   <div class="shopping-container">
+              <a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/WFkZT76/imgonline-com-ua-Resize-g-CNOFAAJBXK.png" alt="shopping-cart"></a>
+            
   <H3> К сожалению на на эту дату все забронированно! </H3>
   
   </div>
