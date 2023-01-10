@@ -27,7 +27,7 @@ if (dey_utr == 0) {
                         <tr>
             
   <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
-  <input type="radio" checked="checked" name="radio">
+  <input type="radio" name="radio">
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:block">Онлайн встреча 13 - 15 МСК
