@@ -38,7 +38,7 @@ if (dey_vech == 0) {
                   
                   
               
- <form name='theForm'>
+ <form id="form"  name='theForm'>
 <fieldset>
     
       <p> Имя</p>
@@ -105,7 +105,7 @@ if (dey_vech == 0) {
   
   </div> 
   
-  <button type="submit">Сохранить </button>
+
    </form>          
                    
         
@@ -140,14 +140,11 @@ if (dey_vech == 0) {
     
     const shoppingPage = new Shopping();
     
-    
+  
 
 
- var form = document.querySelector("form");
-  form.addEventListener("submit", function(event) {
-    console.log("Saving value", form.elements.value.value);
-    event.preventDefault();
-  });
+
+
 
 
 
@@ -159,20 +156,14 @@ if (dey_vech == 0) {
      spinnerPage.render();
         
  var pro = localStorageUtil.getProducts(); 
+     let sumCat;
      
-     
-     
-      var sumCat = document.querySelector("form");
-  form.addEventListener("submit", function(event) {
-    console.log("Saving value", form.elements.value.value);
-    event.preventDefault();
-  });  
+
+       var form = document.getElementById('form');  
         
         
         
-        
-        
-        //console.log(pro)
+        console.log(form)
        //console.log(sumCat)
      
     
