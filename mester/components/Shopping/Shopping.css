@@ -1,3 +1,8 @@
+.alert{
+	
+	z-index: 99999998; 
+}
+
 .shopping-container {
 	overflow: scroll; 
 	position: fixed;
