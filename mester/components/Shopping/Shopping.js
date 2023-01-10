@@ -59,15 +59,15 @@ if (dey_vech == 0) {
                         <tr>
             
   <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
-  <input type="radio" id="rid1" name="radio">
+  <input type="radio" id="rid1">
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
-  <input type="radio" id="rid2" name="radio">
+  <input type="radio" id="rid2">
   <span class="checkmark_sho"></span>
 </label>
 <label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
-  <input type="radio" id="rid3" name="radio">
+  <input type="radio" id="rid3">
   <span class="checkmark_sho"></span>
 </label>
            
