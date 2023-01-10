@@ -106,7 +106,7 @@ if (dey_vech == 0) {
   </div>   
    </form>          
                    
-         
+        <button type="button" id="submits" class="btn btn-outline-warning" onclick="alerted();">Оформить заказ</button> 
                    
                    
                    
