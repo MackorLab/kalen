@@ -8,15 +8,26 @@ var reloads;
     
         render() {
          let urt_s;
-            let dey_s;
-            let vech_s;
+         let dey_s;
+         let vech_s;
             
 if (dey_utr == 0) {
  urt_s = "block";
 } else {
  urt_s = "none"; 
 }
-            
+  
+if (dey_dey == 0) {
+ dey_s = "block";
+} else {
+ dey_s = "none"; 
+}            
+ 
+if (dey_vech == 0) {
+ vech_s = "block";
+} else {
+ vech_s = "none"; 
+}            
 
   const html = `
                 <div class="shopping-container">
@@ -30,11 +41,11 @@ if (dey_utr == 0) {
   <input type="radio" name="radio">
   <span class="checkmark_sho"></span>
 </label>
-<label class="container_sho" style = "display:block">Онлайн встреча 13 - 15 МСК
+<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
   <input type="radio" name="radio">
   <span class="checkmark_sho"></span>
 </label>
-<label class="container_sho" style = "display:block">Онлайн встреча 17 - 19 МСК
+<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
   <input type="radio" name="radio">
   <span class="checkmark_sho"></span>
 </label>
