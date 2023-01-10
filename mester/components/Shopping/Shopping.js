@@ -17,12 +17,15 @@ var reloads;
             
 if (dey_utr == 0) {
   chec_utr = "checked";  
+    console.log("chec_utr1") 
  
 } else if (dey_dey == 0) {
    chec_dey = "checked";  
+     console.log("chec_utr2") 
   
 } else if (dey_vech == 0) {
-   chec_vech = "checked";  
+   chec_vech = "checked"; 
+     console.log("chec_utr3") 
   
 } else {
     
@@ -36,6 +39,7 @@ if (dey_utr == 0) {
             
             
 if (dey_utr == 0) {
+    
  urt_s = "block";
 } else {
  urt_s = "none"; 
