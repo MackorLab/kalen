@@ -84,7 +84,7 @@ if (dey_vech == 0) {
                 <div class="accordion"> 
    <div class="tab">
     <input type="checkbox" id="tab1" name="tab-group">
-    <label for="tab1" class="tab-title">Политика конфиденциальности:</label> 
+    <label onclick="polit_con();" for="tab1" class="tab-title">Политика конфиденциальности:</label> 
     <section class="tab-content"> 
      <p>Под HTML5 обычно подразумевают два разных понятия:</p>
      <ul>
@@ -95,7 +95,7 @@ if (dey_vech == 0) {
     </section> 
    </div> 
    <div class="tab">
-    <input type="checkbox" id="tab2" name="tab-group">
+    <input onclick="per_dan();" type="checkbox" id="tab2" name="tab-group">
     <label for="tab2" class="tab-title">Обработка персональных данных:</label> 
     <section class="tab-content"> 
      Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
