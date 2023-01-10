@@ -30,11 +30,12 @@ class Products {
 	  let cards;
 	  let d;
 	  let o;
-		
+	  let c;	
 	d = Number(id);
 	o = Number(sdvig);	
-	cards = 	d - o;
-          
+	cards = d - o;
+        c = String(cards);
+		
 if (dey_utr === 0) {
   col_utr = "#33cc33";
 } else if (dey_utr === 1) {
@@ -98,7 +99,7 @@ htmlCatalog += `
 
 
 <li>
-<a onclick="openPop_dey_${cards}();" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_dey} 34%, ${col_dey} 66%, ${col_vech} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${dey}</a>
+<a onclick="openPop_dey_${c}();" class="dropbtn" style = "background: linear-gradient(to top, ${col_utr} 34%, ${col_dey} 34%, ${col_dey} 66%, ${col_vech} 66%); padding: 1px ${otstup}px 1px ${otstup}px; color: #ffffff;">${dey}</a>
 </li>
 
 
