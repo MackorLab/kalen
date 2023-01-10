@@ -62,16 +62,7 @@ if (dey_vech == 0) {
                    
                    
                    
-  <button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>               
-                   
+         
                    
                    
                    
@@ -86,7 +77,37 @@ if (dey_vech == 0) {
            
            
            
-           
+<div class="accordion"> 
+   <div class="tab">
+    <input type="checkbox" id="tab1" name="tab-group">
+    <label for="tab1" class="tab-title">Что такое HTML5?</label> 
+    <section class="tab-content"> 
+     <p>Под HTML5 обычно подразумевают два разных понятия:</p>
+     <ul>
+      <li>Это язык разметки документа, пришедший на смену HTML4 и XHTML.</li>
+      <li>Это набор веб-технологий, позволяющий делать на сайте 
+       всякие интересные штуки.</li>
+     </ul>
+    </section> 
+   </div> 
+   <div class="tab">
+    <input type="checkbox" id="tab2" name="tab-group">
+    <label for="tab2" class="tab-title">Можно ли программировать на HTML5?</label> 
+    <section class="tab-content"> 
+     Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
+     Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
+    </section> 
+   </div> 
+   <div class="tab">
+    <input type="checkbox" id="tab3" name="tab-group">
+    <label for="tab3" class="tab-title">Чем HTML5 отличается от HTML4?</label>
+    <section class="tab-content">
+     В HTML5 добавлены новые элементы, вроде &lt;header&gt;, &lt;footer&gt;, 
+     &lt;aside&gt;, &lt;article&gt;, появилась долгожданная поддержка аудио, 
+     видео и многое другое.
+    </section>
+   </div>
+  </div>   
            
            
            
@@ -106,21 +127,6 @@ if (dey_vech == 0) {
     
     
 
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
 
 
 
