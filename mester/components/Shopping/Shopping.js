@@ -15,14 +15,14 @@ var reloads;
          let chec_vech = "";
             
             
-if (dey_utr == 0) {
-  chec_utr = "checked";  
+if (vech_s == 0) {
+  chec_vech = "checked";  
  
 } else if (dey_s == 0) {
    chec_dey = "checked";  
   
-} else if (vech_s == 0) {
-   chec_vech = "checked";  
+} else if (urt_s == 0) {
+   chec_utr = "checked";  
   
 } else {
     
