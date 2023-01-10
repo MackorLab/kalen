@@ -103,10 +103,12 @@ if (dey_vech == 0) {
     </section> 
    </div> 
   
-  </div>   
+  </div> 
+  
+  <button type="submit">Сохранить </button>
    </form>          
                    
-        <button type="button" id="submits" class="btn btn-outline-warning" onclick="alerted();">Оформить заказ</button> 
+        
                    
                    
                    
@@ -141,7 +143,11 @@ if (dey_vech == 0) {
     
 
 
-
+ var form = document.querySelector("form");
+  form.addEventListener("submit", function(event) {
+    console.log("Saving value", form.elements.value.value);
+    event.preventDefault();
+  });
 
 
 
