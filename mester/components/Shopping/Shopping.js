@@ -241,7 +241,7 @@ if (dey_utr == 0) {
     
     
     
-   ROOT_SPINNER.innerHTML = htm_test; 
+   ROOT_ALERT.innerHTML = htm_test; 
     
     
 }  
