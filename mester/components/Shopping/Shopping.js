@@ -166,13 +166,13 @@ function per_dan(){
      //spinnerPage.render();
         
  var pro = localStorageUtil.getProducts(); 
-     let sumCat;
+     
      
 
        var forms = document.getElementById('form');  
         
         
-    var cech    document.querySelector('input[name="rate"]:checked').value;
+    var cech = document.querySelector('input[name="rate"]:checked').value;
         
         console.log(forms.name.value);
         console.log(forms.telephone.value);
