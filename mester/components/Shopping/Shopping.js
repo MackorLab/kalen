@@ -44,7 +44,7 @@ var reloads;
   <option value="2500">🇧🇪</option>
   <option value="3100">🇷🇺</option>
   <option value="2400">🇷🇺</option>
-  <option value="1850">U+1F1E7</option>
+  <option value="1850">😃</option>
 </select> 
      <input id="phone" name='phone'>
   </div>
