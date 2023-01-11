@@ -41,7 +41,7 @@ var reloads;
     <label for="phone">Телефон: </label>
    <select id="agriculture">
   <option value="3100">🇷🇺</option>
-  <option value="2500">🇷🇺</option>
+  <option value="2500">🇧🇪</option>
   <option value="3100">🇷🇺</option>
   <option value="2400">🇷🇺</option>
   <option value="1850">U+1F1E7</option>
