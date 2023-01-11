@@ -364,7 +364,7 @@ Toastify({
        
         
  function validateNames(names){
-let regexs = @^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$@gm;
+let regexs = /^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$/;
  return regexs.test(names);
 };     
   
