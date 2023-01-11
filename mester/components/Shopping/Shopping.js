@@ -30,7 +30,7 @@ var reloads;
       <p> Имя</p>
       
      <select id="country" class="form-control"  onChange="javascript: doIcon( this.value );" style="width: 65px;" class="icon">
-      <option style="background-image: url(https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png);"  class="icon" value="ru">Россия +7</option>
+      <option style="background-image: url(https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png);"  class="icon" value="ru"> +7</option>
       <option value="ua">Украина +380</option>
       <option value="by">Белоруссия +375</option>
     </select>  
