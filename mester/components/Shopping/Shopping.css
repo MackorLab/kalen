@@ -177,22 +177,4 @@
 
 /* Форма */
 
-    hr {
-      margin: 5px 0 5px;
-    }
-
-    input {
-      display: inline-block !important;
-      width: auto !important;
-    }
-
-    #country,
-    #phone {
-      display: inline-block;
-      width: auto;
-    }
-
-    label[for="phone"] {
-      display: block;
-    }
 
