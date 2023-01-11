@@ -478,7 +478,16 @@ headerPage.handlerOpenShoppingPage()
   <script src="https://mackorlab.github.io/kalen/mester/utils/chosen.jquery.js" type="text/javascript"></script>
   <script src="https://mackorlab.github.io/kalen/mester/utils/ImageSelect.jquery.js" type="text/javascript"></script>
   
-  <script type="text/javascript">
+  <script>
+	  
+var select = document.getElementById('country');
+
+select.addEventListener('change', function(){  
+  var getValue = this.value;
+  // this в этом контексте - элемент, который запустил фукнцию. То же, что и select.value;
+  console.log( getValue );
+});
+  
    
   </script>
 	
