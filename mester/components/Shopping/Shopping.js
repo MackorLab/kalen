@@ -414,7 +414,7 @@ if (!validatePhone(phone)){
     console.log('Не соответствует персонал');
 } else {
 
-     
+   console.log('Успех, данные отправленны!');   
 }      
         
         
