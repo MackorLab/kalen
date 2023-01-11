@@ -362,17 +362,20 @@ Toastify({
     
 
         
- 
+ function validatePhone(phone){
 let regex = /^((8|\+374|\+994|\+995|\+375|\+7|\+380|\+38|\+996|\+998|\+993)[\- ]?)?\(?\d{3,5}\)?[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}(([\- ]?\d{1})?[\- ]?\d{1})?$/;
+ return regex.test(phone);
+};
+
    
         
         
         
 let phone = forms.telephone.value;
-if(!regex.test(phone){
-console.log('Не соответствует');
+if (!validatePhone(phone)){
+  console.log('Не соответствует');
 }else{
-console.log('Соответствует');
+  console.log('Соответствует');
 };     
         
     }
