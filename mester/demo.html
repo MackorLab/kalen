@@ -83,12 +83,18 @@
   
   
   
-  
+ <script>function initAgCookieAlert(){var buttonClose = BX("js-cookie-alert-close"), alertWindow = BX("js-alert-cookie-window");var closeCookieValue = "N"; var value = "; " + document.cookie;var parts = value.split("; " + "AG_COOKIE_ALEdsTD" + "=");if (parts.length == 2) { closeCookieValue = parts.pop().split(";").shift(); }if(closeCookieValue != "Y") { BX.style(alertWindow, "display", "flex"); setTimeout(function(){BX.style(alertWindow, "opacity", "1");}, 50); } else { BX.remove(alertWindow); }BX.bind(buttonClose, "click", function(){var cookie_string = "AG_COOKIE_ALEdsTD" + "=" + escape("Y"); var expires = new Date((new Date).getTime() + (1000 * 60 * 60 * 24 * 1)); cookie_string += "; expires=" + expires.toUTCString(); cookie_string += "; path=" + escape ("/"); document.cookie = cookie_string; BX.remove(alertWindow);});}
+if(window.frameCacheVars !== undefined){BX.addCustomEvent("onFrameDataReceived", function(json){ initAgCookieAlert(); });}else{BX.ready(function(){ initAgCookieAlert(); });}</script> 
           
-
+<script>var cMaskParamsObj = {'default':{'country_init':'ru','country_sng':['ru','by','ua','kz','az','am','kg','md','tj','uz','wo'],'country_show':['ru','by','ua','kz','az','am','kg','md','tj','uz','wo']},'user':{'country_type':'sng','aspro':false,'country_show':['az','am','by','kz','kg','md','ru','tj','uz','ua'],'country_main':'','country_init':'ru'},'script':{'s1':'/bitrix/js/arturgolubev.countrymask/iti-ag.min.js','s2':'/bitrix/js/arturgolubev.countrymask/utl.js'},'js':{'clear_on_change':true,'input_selectors':'.cmask','clear78':true,'clear77':true},'lib':{'country_show':['az','am','by','kz','kg','md','ru','tj','uz','ua'],'country_main':[],'country_init':'ru'},'LOC':{'az':'Азербайджан','am':'Армения','by':'Беларусь','kz':'Казахстан','kg':'Киргизия','md':'Молдова','ru':'Россия','tj':'Таджикистан','uz':'Узбекистан','ua':'Украина'},'debug':false}; BX.onCustomEvent(cMaskParamsObj, "onCMaskBeforeInit", [cMaskParamsObj]);</script>
   <script>
 
   </script>
+	
+	
+	
+	
+	
 </body>
 
 </html>
