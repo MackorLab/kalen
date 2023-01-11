@@ -337,13 +337,6 @@ function per_dan(){
 
 
 
-var select = document.getElementById('country');
-
-select.addEventListener('change', function(){  
-  var getValue = this.value;
-  // this в этом контексте - элемент, который запустил фукнцию. То же, что и select.value;
-  console.log( getValue );
-});
 
 
 
