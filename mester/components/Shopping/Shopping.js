@@ -29,7 +29,11 @@ var reloads;
       <input id="name" name='name'>
       <p> Имя</p>
       
-     
+     <select id="country" class="form-control">
+      <option value="ru">Россия +7</option>
+      <option value="ua">Украина +380</option>
+      <option value="by">Белоруссия +375</option>
+    </select>  
  <input id="phone" name='phone'>
    <p> Телефон</p>
 
