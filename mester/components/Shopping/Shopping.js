@@ -320,7 +320,7 @@ function per_dan(){
 
 
 
-var input = document.querySelector("#phone");
+var input = document.querySelector("#telephone");
     window.intlTelInput(input, {
       // allowDropdown: false,
       // autoHideDialCode: false,
