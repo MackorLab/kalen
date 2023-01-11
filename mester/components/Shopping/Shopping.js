@@ -37,9 +37,11 @@ var reloads;
       <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/ukraine-flag.png" value="380">UKR +380</option>
       <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/belarus-flag.png" value="375">BEL +375</option>
       <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/armenia-flag.png" value="374">KAZ +374</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/kyrgyzstan-flag.png" value="996">KGZ +996</option>
+      <option data-img-src="https://i.ibb.co/ZgZgr8b/free-icon-moldova-321210-1.png" value="373">MOL +373</option>
       
     </select>  
- <input class="pop_phone" id="phone" name='phone'>
+ <input class="pop_phone" id="phone" name='phone' value="9554443311">
    <p> Телефон</p>
 
 
