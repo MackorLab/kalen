@@ -11,14 +11,20 @@
 
 <body>
   <h1>International Telephone Input</h1>
-  <form>
-    <input id="phone" name="phone" type="tel">
-    <button type="submit">Submit</button>
-  </form>
+  <fieldset>
+    
+      <p> Имя</p>
+      <input id="name" name='name'><br>
+        <p> Телефон</p>
+      <input id="phone" name='phone'><br>
+      
+      <br>
+  </fieldset>
+          
 
-  <script src="build/js/intlTelInput.js"></script>
+  <script src="https://mackorlab.github.io/kalen/mester/tel-input/js/intlTelInput.js"></script>
   <script>
-    var input = document.querySelector("#phone");
+var input = document.querySelector("#phone");
     window.intlTelInput(input, {
       // allowDropdown: false,
       // autoHideDialCode: false,
