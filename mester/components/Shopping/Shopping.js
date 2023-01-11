@@ -30,9 +30,14 @@ var reloads;
       <p> Имя</p>
       
      <select id="country" class="my-select">
-      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png" value="+7">RUS +7</option>
-      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/ukraine-flag.png" value="+380">UKR +380</option>
-      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/belarus-flag.png" value="+375">BEL +375</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png" value="7">RUS +7</option>
+      
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/azerbaijan-flag.png" value="994">AZE +994</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/armenia-flag.png" value="374">ARM +374</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/ukraine-flag.png" value="380">UKR +380</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/belarus-flag.png" value="375">BEL +375</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/armenia-flag.png" value="374">KAZ +374</option>
+      
     </select>  
  <input class="pop_phone" id="phone" name='phone'>
    <p> Телефон</p>
