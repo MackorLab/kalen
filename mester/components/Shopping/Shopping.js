@@ -28,7 +28,7 @@ var reloads;
       <p> Имя</p>
       <input id="name" name='name'><br>
         <p> Телефон</p>
-      <input id="telephone"><br>
+      <input id="phone" name='phone'><br>
       
       <br>
   </fieldset>
@@ -320,7 +320,7 @@ function per_dan(){
 
 
 
-var input = document.querySelector("#telephone");
+var input = document.querySelector("#phone");
     window.intlTelInput(input, {
       // allowDropdown: false,
       // autoHideDialCode: false,
@@ -370,7 +370,7 @@ var input = document.querySelector("#telephone");
     var cech = document.querySelector('input[name="rate"]:checked').value;
         
         console.log(forms.name.value);
-        console.log(forms.telephone.value);
+        console.log(forms.phone.value);
         console.log(forms.rid1.value);
          console.log(forms.rid2.value);
          console.log(forms.rid3.value);
@@ -407,7 +407,7 @@ let regex = /^((8|\+374|\+994|\+995|\+375|\+7|\+380|\+38|\+996|\+998|\+993)[\- ]
         
         
         
-let phone = forms.telephone.value;
+let phone = forms.phone.value;
 if (!validatePhone(phone)){
   console.log('Не соответствует');
 }else{
