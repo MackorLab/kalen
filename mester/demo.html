@@ -4,102 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title>International Telephone Input</title>
-<style>
-	.phones-page input {
-		display: block;
-		width: 260px;
-		height: 34px;
-		padding: 6px 12px;
-		font-size: 14px;
-		line-height: 1.42857143;
-		color: #555;
-		background-color: #fff;
-		background-image: none;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-		box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-		-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-		-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-		transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-		
-		margin-top: 5px;
-		padding: 0 4px;
-		border: 1px solid #CCD5DB;
-		border-radius: 2px;
-		background: #f8fafc;
-		outline: none;
-	}
-	
-	.phones-example-item {
-		margin-top: 25px;
-	}
-	
-	
-	#workarea ul li::before {
-		display: none !important;
-	}
-	#workarea li {
-		text-indent: 0 !important;
-		margin: 0;
-	}
-	
-	.ag-countrymask.iti {
-		margin-top: 5px;
-	}
-</style>
-	
-	
-
-
-	
-	
-		
-	
+  <link rel="stylesheet" href="https://mackorlab.github.io/kalen/mester/tel-input/css/intlTelInput.css">
+  <link rel="stylesheet" href="https://mackorlab.github.io/kalen/mester/tel-input/css/demo.css">
 </head>
 
 <body>
+  <h1>International Telephone Input</h1>
+  <form>
+    <input id="phone" name="phone" type="tel">
+    <button type="submit">Submit</button>
+  </form>
 
-  <script>function initAgCookieAlert(){var buttonClose = BX("js-cookie-alert-close"), alertWindow = BX("js-alert-cookie-window");var closeCookieValue = "N"; var value = "; " + document.cookie;var parts = value.split("; " + "AG_COOKIE_ALEdsTD" + "=");if (parts.length == 2) { closeCookieValue = parts.pop().split(";").shift(); }if(closeCookieValue != "Y") { BX.style(alertWindow, "display", "flex"); setTimeout(function(){BX.style(alertWindow, "opacity", "1");}, 50); } else { BX.remove(alertWindow); }BX.bind(buttonClose, "click", function(){var cookie_string = "AG_COOKIE_ALEdsTD" + "=" + escape("Y"); var expires = new Date((new Date).getTime() + (1000 * 60 * 60 * 24 * 1)); cookie_string += "; expires=" + expires.toUTCString(); cookie_string += "; path=" + escape ("/"); document.cookie = cookie_string; BX.remove(alertWindow);});}
-if(window.frameCacheVars !== undefined){BX.addCustomEvent("onFrameDataReceived", function(json){ initAgCookieAlert(); });}else{BX.ready(function(){ initAgCookieAlert(); });}</script> 
-          
-<script>var cMaskParamsObj = {'default':{'country_init':'ru','country_sng':['ru','by','ua','kz','az','am','kg','md','tj','uz','wo'],'country_show':['ru','by','ua','kz','az','am','kg','md','tj','uz','wo']},'user':{'country_type':'sng','aspro':false,'country_show':['az','am','by','kz','kg','md','ru','tj','uz','ua'],'country_main':'','country_init':'ru'},'script':{'s1':'/bitrix/js/arturgolubev.countrymask/iti-ag.min.js','s2':'/bitrix/js/arturgolubev.countrymask/utl.js'},'js':{'clear_on_change':true,'input_selectors':'.cmask','clear78':true,'clear77':true},'lib':{'country_show':['az','am','by','kz','kg','md','ru','tj','uz','ua'],'country_main':[],'country_init':'ru'},'LOC':{'az':'Азербайджан','am':'Армения','by':'Беларусь','kz':'Казахстан','kg':'Киргизия','md':'Молдова','ru':'Россия','tj':'Таджикистан','uz':'Узбекистан','ua':'Украина'},'debug':false}; BX.onCustomEvent(cMaskParamsObj, "onCMaskBeforeInit", [cMaskParamsObj]);</script>
-   
-  
-  
-  
- <div class="phones-page">
-	<div class="phones-example-item">
-		Тестовое поле ввода:<br>
-		<div class="iti iti--allow-dropdown iti--separate-dial-code ag-countrymask">
-      <div class="iti__flag-container"><div class="iti__selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="Россия: +7">
-        <div class="iti__flag iti__ru"></div><div class="iti__selected-dial-code"></div>
-        <div class="iti__arrow iti__arrow--up"></div>
-        </div><ul class="iti__country-list" id="country-listbox" aria-expanded="true" role="listbox" aria-activedescendant="iti-item-ru">
-        <li class="iti__country iti__standard" tabindex="-1" id="iti-item-az" role="option" data-dial-code="994" data-country-code="az">
-          <div class="iti__flag-box"><div class="iti__flag iti__az"></div></div>
-          <span class="iti__country-name">Азербайджан</span><span class="iti__dial-code">+994</span></li
-          ><li class="iti__country iti__standard" tabindex="-1" id="iti-item-am" role="option" data-dial-code="374" data-country-code="am">
-        <div class="iti__flag-box"><div class="iti__flag iti__am"></div></div><span class="iti__country-name">Армения</span><span class="iti__dial-code">+374</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-by" role="option" data-dial-code="375" data-country-code="by"><div class="iti__flag-box"><div class="iti__flag iti__by"></div></div><span class="iti__country-name">Беларусь</span><span class="iti__dial-code">+375</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-kz" role="option" data-dial-code="7" data-country-code="kz"><div class="iti__flag-box"><div class="iti__flag iti__kz"></div></div><span class="iti__country-name">Казахстан</span><span class="iti__dial-code">+7</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-kg" role="option" data-dial-code="996" data-country-code="kg"><div class="iti__flag-box"><div class="iti__flag iti__kg"></div></div><span class="iti__country-name">Киргизия</span><span class="iti__dial-code">+996</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-md" role="option" data-dial-code="373" data-country-code="md"><div class="iti__flag-box"><div class="iti__flag iti__md"></div></div><span class="iti__country-name">Молдова</span><span class="iti__dial-code">+373</span></li><li class="iti__country iti__standard iti__active iti__highlight" tabindex="-1" id="iti-item-ru" role="option" data-dial-code="7" data-country-code="ru" aria-selected="true"><div class="iti__flag-box"><div class="iti__flag iti__ru"></div></div><span class="iti__country-name">Россия</span><span class="iti__dial-code">+7</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-tj" role="option" data-dial-code="992" data-country-code="tj"><div class="iti__flag-box"><div class="iti__flag iti__tj"></div></div><span class="iti__country-name">Таджикистан</span><span class="iti__dial-code">+992</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-uz" role="option" data-dial-code="998" data-country-code="uz"><div class="iti__flag-box"><div class="iti__flag iti__uz"></div></div><span class="iti__country-name">Узбекистан</span><span class="iti__dial-code">+998</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-ua" role="option" data-dial-code="380" data-country-code="ua"><div class="iti__flag-box"><div class="iti__flag iti__ua"></div></div><span class="iti__country-name">Украина</span><span class="iti__dial-code">+380</span></li></ul></div><input class="cmask" type="text" name="test1" value="" inputmode="tel" autocomplete="off" data-intl-tel-input-id="0" placeholder="+7 ___ ___-__-__" style="padding-left: 52px;"></div>
-	</div>
-</div> 
-  
-  
-  
-  
-  
-<script>
-
+  <script src="https://mackorlab.github.io/kalen/mester/tel-input/js/intlTelInput.jss"></script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "https://mackorlab.github.io/kalen/mester/tel-input/js/utils.js",
+    });
   </script>
-	
-	
-	
-<script src="https://corporate.arturgolubev.ru/bitrix/js/arturgolubev.countrymask/iti-ag.min.js?v=1624003705"></script>
-	<script src="https://corporate.arturgolubev.ru/bitrix/js/arturgolubev.countrymask/min.inputmask.bundle.js?v=1624003705"></script>
-	<script src="https://corporate.arturgolubev.ru/bitrix/js/arturgolubev.countrymask/script.min.js?v=1666685497"></script>
-	
-<script src="https://corporate.arturgolubev.ru/bitrix/js/arturgolubev.countrymask/utl.js"></script>	
-	
 </body>
 
 </html>
