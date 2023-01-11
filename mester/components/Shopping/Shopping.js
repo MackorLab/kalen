@@ -40,11 +40,11 @@ var reloads;
   <div class="form-group">
     <label for="phone">Телефон: </label>
    <select id="agriculture">
-  <option value="3100">Пшеница ≈ 3100 грн / т"</option>
-  <option value="2500">Овес ≈ 2500 грн / т"</option>
-  <option value="3100">Рожь ≈ 3100 грн / т"</option>
-  <option value="2400">Кукуруза ≈ 2400 грн / т"</option>
-  <option value="1850">Просо ≈ 1850 грн / т"</option>
+  <option value="3100">🇷🇺</option>
+  <option value="2500">🇷🇺</option>
+  <option value="3100">🇷🇺</option>
+  <option value="2400">🇷🇺</option>
+  <option value="1850">🇷🇺</option>
 </select> 
      <input id="phone" name='phone'>
   </div>
