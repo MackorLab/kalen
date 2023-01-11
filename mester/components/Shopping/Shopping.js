@@ -368,7 +368,7 @@ let regexs = @^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$@gm;
  return regexs.test(names);
 };     
   
- let names = forms.telephone.value;        
+ let names = forms.name.value;        
  
 if (!validateNames(names)){
   console.log('Не соответствует');
