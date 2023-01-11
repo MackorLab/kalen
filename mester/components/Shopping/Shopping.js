@@ -395,6 +395,36 @@ if (!validatePhone(phone)){
 }else{
   console.log('Соответствует');
 };     
+  
+        
+        
+        
+        
+  if (!validateNames(names)) {
+ 
+     console.log('Не соответствует имя'); 
+} else if (!validatePhone(phone)) {
+  
+    console.log('Не соответствует телефон');
+} else {
+
+     
+}      
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 
