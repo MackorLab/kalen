@@ -362,7 +362,7 @@ var forms = document.getElementById('form');
      
     
 var selects = document.getElementById("country");
-var val_ues = select.value;
+var val_ues = selects.value;
 console.log(val_ues); 
 
        
