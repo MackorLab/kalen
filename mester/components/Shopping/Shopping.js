@@ -406,6 +406,12 @@ if (!validatePhone(phone)){
 } else if (!validatePhone(phone)) {
   
     console.log('Не соответствует телефон');
+} else if (polit == 0) {
+  console.log('Не соответствует политика');
+    console.log('Не соответствует телефон');
+} else if (per == 0) {
+  
+    console.log('Не соответствует персонал');
 } else {
 
      
