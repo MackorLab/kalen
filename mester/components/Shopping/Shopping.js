@@ -46,7 +46,7 @@ var reloads;
   <option value="2400">Кукуруза ≈ 2400 грн / т"</option>
   <option value="1850">Просо ≈ 1850 грн / т"</option>
 </select> 
-    <input id="phone" type="text" class="form-control tel" value="">
+     <input id="phone" name='phone'>
   </div>
 
 
@@ -54,7 +54,7 @@ var reloads;
 
 
 
-   <input id="phone" name='phone'>
+ 
         
         
         
