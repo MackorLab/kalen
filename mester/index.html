@@ -482,11 +482,10 @@ headerPage.handlerOpenShoppingPage()
 	  
 var select = document.getElementById('country');
 
-select.addEventListener('change', function(){  
-  var getValue = this.value;
-  // this в этом контексте - элемент, который запустил фукнцию. То же, что и select.value;
-  console.log( getValue );
-});
+selectFunction = function() {
+  var getValue = select.value;
+  console.log(getValue);
+}
   
    
   </script>
