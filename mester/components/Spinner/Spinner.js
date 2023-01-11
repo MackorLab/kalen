@@ -7,16 +7,7 @@ class Spinner {
       const html = `
         <div class="spinner-container">
           
-         <div class="box"> 
-          <div class="d-flex justify-content-center"> 
-          
-          
-          
-         <img src="https://xn--74-6kcaethvbmg4e6b.xn--p1ai/images/uslugi/44.jpg" alt="Avatar" style="width:30%;">
-         
-         
-         </div>
-         
+      
          
          
          
