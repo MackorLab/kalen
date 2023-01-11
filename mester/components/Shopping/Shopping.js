@@ -13,8 +13,8 @@ var reloads;
          let chec_utr = "";
          let chec_dey = "";   
          let chec_vech = "";
-            var html_vivod = ``; 
-          var html_chek = ``;
+         var html_vivod = ``; 
+         var html_chek = ``;
             
             var htm_test = ``;
             
@@ -361,6 +361,24 @@ Toastify({
     
     
 
+       
+        
+ function validateNames(names){
+let regexs = @^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$@gm;
+ return regexs.test(names);
+};     
+  
+ let names = forms.telephone.value;        
+ 
+if (!validateNames(names)){
+  console.log('Не соответствует');
+}else{
+  console.log('Соответствует');
+}; 
+        
+        
+        
+        
         
  function validatePhone(phone){
 let regex = /^((8|\+374|\+994|\+995|\+375|\+7|\+380|\+38|\+996|\+998|\+993)[\- ]?)?\(?\d{3,5}\)?[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}(([\- ]?\d{1})?[\- ]?\d{1})?$/;
