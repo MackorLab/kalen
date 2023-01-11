@@ -26,23 +26,17 @@ var reloads;
 <fieldset>
     
       <p> Имя</p>
-      <input id="name" name='name'><br>
-        <p> Телефон</p>
+      <input id="name" name='name'>
+      
+      <br>
+      <p> Телефон</p>
         
         
-    <div class="form-group">
-    <label for="phone">Телефон: </label>
-    <select id="country" class="form-control">
-      <option value="ru">Россия +7</option>
-      <option value="ua">Украина +380</option>
-      <option value="by">Белоруссия +375</option>
-    </select>
-    <input id="phone" type="text" class="form-control tel" value="">
-  </div>
+   <input id="phone" name='phone'>
         
         
         
-        
+      <br>  
         
     
       
