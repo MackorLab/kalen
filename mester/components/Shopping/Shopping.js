@@ -34,7 +34,7 @@ var reloads;
       <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/ukraine-flag.png" value="+380">UKR +380</option>
       <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/belarus-flag.png" value="+375">BEL +375</option>
     </select>  
- <input id="phone" name='phone'>
+ <input class="pop_phone" id="phone" name='phone'>
    <p> Телефон</p>
 
 
