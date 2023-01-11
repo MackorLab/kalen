@@ -361,9 +361,7 @@ var forms = document.getElementById('form');
        console.log(cech)
      
     
-var selects = document.getElementById("country");
-var phone_sel = selects.value;
-console.log(phone_sel); 
+
 
        
         
@@ -389,11 +387,13 @@ let regex = /^((8|\+374|\+994|\+995|\+375|\+7|\+380|\+38|\+996|\+998|\+993)[\- ]
  return regex.test(phone);
 };
 
-   
+let selects = document.getElementById("country");
+let phone_sel = selects.value;
+console.log(phone_sel);  
         
         
-      
-let phone = phone_sel + forms.phone.value;
+let phone_num = forms.phone.value;    
+let phone = phone_sel + phone_num;
    console.log(phone);     
 if (!validatePhone(phone)){
   console.log('Не соответствует');
