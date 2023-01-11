@@ -31,8 +31,8 @@ var reloads;
       
      <select id="country" class="my-select">
       <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png" value="ru">RUS +7</option>
-      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png" value="ua">UA +380</option>
-      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png" value="by">BLR +375</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/ukraine-flag.png" value="ua">UKR +380</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/belarus-flag.png" value="by">BEL +375</option>
     </select>  
  <input id="phone" name='phone'>
    <p> Телефон</p>
