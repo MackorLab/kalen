@@ -10,44 +10,36 @@
 </head>
 
 <body>
-  <h1>International Telephone Input</h1>
-  <fieldset>
-    
-      <p> Имя</p>
-      <input id="name" name='name'><br>
-        <p> Телефон</p>
-      <input id="phone" name='phone'><br>
-      
-      <br>
-  </fieldset>
+
+  
+  
+  
+  
+ <div class="phones-page">
+	<div class="phones-example-item">
+		Тестовое поле ввода:<br>
+		<div class="iti iti--allow-dropdown iti--separate-dial-code ag-countrymask">
+      <div class="iti__flag-container"><div class="iti__selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="Россия: +7">
+        <div class="iti__flag iti__ru"></div><div class="iti__selected-dial-code">+7</div>
+        <div class="iti__arrow iti__arrow--up"></div>
+        </div><ul class="iti__country-list" id="country-listbox" aria-expanded="true" role="listbox" aria-activedescendant="iti-item-ru">
+        <li class="iti__country iti__standard" tabindex="-1" id="iti-item-az" role="option" data-dial-code="994" data-country-code="az">
+          <div class="iti__flag-box"><div class="iti__flag iti__az"></div></div>
+          <span class="iti__country-name">Азербайджан</span><span class="iti__dial-code">+994</span></li
+          ><li class="iti__country iti__standard" tabindex="-1" id="iti-item-am" role="option" data-dial-code="374" data-country-code="am">
+        <div class="iti__flag-box"><div class="iti__flag iti__am"></div></div><span class="iti__country-name">Армения</span><span class="iti__dial-code">+374</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-by" role="option" data-dial-code="375" data-country-code="by"><div class="iti__flag-box"><div class="iti__flag iti__by"></div></div><span class="iti__country-name">Беларусь</span><span class="iti__dial-code">+375</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-kz" role="option" data-dial-code="7" data-country-code="kz"><div class="iti__flag-box"><div class="iti__flag iti__kz"></div></div><span class="iti__country-name">Казахстан</span><span class="iti__dial-code">+7</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-kg" role="option" data-dial-code="996" data-country-code="kg"><div class="iti__flag-box"><div class="iti__flag iti__kg"></div></div><span class="iti__country-name">Киргизия</span><span class="iti__dial-code">+996</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-md" role="option" data-dial-code="373" data-country-code="md"><div class="iti__flag-box"><div class="iti__flag iti__md"></div></div><span class="iti__country-name">Молдова</span><span class="iti__dial-code">+373</span></li><li class="iti__country iti__standard iti__active iti__highlight" tabindex="-1" id="iti-item-ru" role="option" data-dial-code="7" data-country-code="ru" aria-selected="true"><div class="iti__flag-box"><div class="iti__flag iti__ru"></div></div><span class="iti__country-name">Россия</span><span class="iti__dial-code">+7</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-tj" role="option" data-dial-code="992" data-country-code="tj"><div class="iti__flag-box"><div class="iti__flag iti__tj"></div></div><span class="iti__country-name">Таджикистан</span><span class="iti__dial-code">+992</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-uz" role="option" data-dial-code="998" data-country-code="uz"><div class="iti__flag-box"><div class="iti__flag iti__uz"></div></div><span class="iti__country-name">Узбекистан</span><span class="iti__dial-code">+998</span></li><li class="iti__country iti__standard" tabindex="-1" id="iti-item-ua" role="option" data-dial-code="380" data-country-code="ua"><div class="iti__flag-box"><div class="iti__flag iti__ua"></div></div><span class="iti__country-name">Украина</span><span class="iti__dial-code">+380</span></li></ul></div><input class="cmask" type="text" name="test1" value="" inputmode="tel" autocomplete="off" data-intl-tel-input-id="0" placeholder="+7 ___ ___-__-__" style="padding-left: 52px;"></div>
+	</div>
+</div> 
+  
+  
+  
+  
+  
+  
           
 
-  <script src="https://mackorlab.github.io/kalen/mester/tel-input/js/intlTelInput.js"></script>
   <script>
-var input = document.querySelector("#phone");
-    window.intlTelInput(input, {
-      // allowDropdown: false,
-      // autoHideDialCode: false,
-      // autoPlaceholder: "off",
-      // dropdownContainer: document.body,
-       excludeCountries: ["ru"],
-      // formatOnDisplay: false,
-      // geoIpLookup: function(callback) {
-      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-      //     var countryCode = (resp && resp.country) ? resp.country : "";
-      //     callback(countryCode);
-      //   });
-      // },
-      // hiddenInput: "full_number",
-      // initialCountry: "auto",
-      // localizedCountries: { 'de': 'Deutschland' },
-      // nationalMode: false,
-      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-      // placeholderNumberType: "MOBILE",
-      // preferredCountries: ['cn', 'jp'],
-      // separateDialCode: true,
-      utilsScript: "https://corporate.arturgolubev.ru/bitrix/js/arturgolubev.countrymask/utl.js",
-    });
+
   </script>
 </body>
 
