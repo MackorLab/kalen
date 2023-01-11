@@ -25,13 +25,13 @@ var reloads;
            <form id="form"  name='theForm'>
 <fieldset>
     
-      <p> Имя</p>
-      <input id="name" name='name'>
       
+      <input id="name" name='name'>
+      <p> Имя</p>
       <br>
-      <p> Телефон</p>
+     
  <input id="phone" name='phone'>
-  
+   <p> Телефон</p>
 
 
 
