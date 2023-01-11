@@ -40,7 +40,7 @@ var reloads;
   <div class="form-group">
     <label for="phone">Телефон: </label>
    <select id="agriculture">
-  <option value="3100">🇷🇺</option>
+  <option value="3100">🇧🇾🇺</option>
   <option value="2500">🇧🇪</option>
   <option value="3100">🇷🇺</option>
   <option value="2400">🇷🇺</option>
