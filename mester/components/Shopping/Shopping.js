@@ -321,16 +321,15 @@ function per_dan(){
 
 
 Toastify({
-  text: "This is a toast",
+  text: "Некорректно заполнено поле Имя",
   duration: 3000,
-  destination: "https://github.com/apvarun/toastify-js",
   newWindow: true,
   close: true,
   gravity: "top", // `top` or `bottom`
   position: "left", // `left`, `center` or `right`
   stopOnFocus: true, // Prevents dismissing of toast on hover
   style: {
-    background: "linear-gradient(to right, #00b09b, #96c93d)",
+    background: "linear-gradient(to right, #b00000, #e04343)",
   },
   onClick: function(){} // Callback after click
 }).showToast();
@@ -401,19 +400,100 @@ if (!validatePhone(phone)){
         
         
   if (!validateNames(names)) {
+      
+      Toastify({
+  text: "Некорректно заполнено поле Имя",
+  duration: 3000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "left", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #b00000, #e04343)",
+  },
+  onClick: function(){} // Callback after click
+}).showToast();
+
+
+      
  
      console.log('Не соответствует имя'); 
 } else if (!validatePhone(phone)) {
+    
+    
+       Toastify({
+  text: "Некорректно заполнено поле Телефон",
+  duration: 3000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "left", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #b00000, #e04343)",
+  },
+  onClick: function(){} // Callback after click
+}).showToast();
+    
+    
   
     console.log('Не соответствует телефон');
 } else if (polit == 0) {
+    
+       Toastify({
+  text: "Ознакомтесь с политикой",
+  duration: 3000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "left", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #b00000, #e04343)",
+  },
+  onClick: function(){} // Callback after click
+}).showToast();
+    
   console.log('Не соответствует политика');
-    console.log('Не соответствует телефон');
+    
 } else if (per == 0) {
+    
+    
+       Toastify({
+  text: "Ознакомтесь с Обработка",
+  duration: 3000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "left", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #b00000, #e04343)",
+  },
+  onClick: function(){} // Callback after click
+}).showToast();
+    
   
     console.log('Не соответствует персонал');
 } else {
 
+    
+       Toastify({
+  text: "Спасибо, дпнные отправленны!",
+  duration: 3000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "left", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #b00000, #e04343)",
+  },
+  onClick: function(){} // Callback after click
+}).showToast();
+    
+    
    console.log('Успех, данные отправленны!');   
 }      
         
