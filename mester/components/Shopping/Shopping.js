@@ -30,9 +30,9 @@ var reloads;
       <p> Имя</p>
       
      <select id="country" class="my-select">
-      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png" value="ru">RUS +7</option>
-      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/ukraine-flag.png" value="ua">UKR +380</option>
-      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/belarus-flag.png" value="by">BEL +375</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png" value="+7">RUS +7</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/ukraine-flag.png" value="+380">UKR +380</option>
+      <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/belarus-flag.png" value="+375">BEL +375</option>
     </select>  
  <input id="phone" name='phone'>
    <p> Телефон</p>
@@ -349,12 +349,9 @@ function per_dan(){
         
  var pro = localStorageUtil.getProducts(); 
      
-     
-
-       var forms = document.getElementById('form');  
+var forms = document.getElementById('form');  
         
-        
-    var cech = document.querySelector('input[name="rate"]:checked').value;
+ var cech = document.querySelector('input[name="rate"]:checked').value;
         
         console.log(forms.name.value);
         console.log(forms.phone.value);
@@ -364,7 +361,9 @@ function per_dan(){
        console.log(cech)
      
     
-    
+var selects = document.getElementById("country");
+var val_ues = select.value;
+console.log(val_ues); 
 
        
         
