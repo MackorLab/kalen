@@ -28,7 +28,7 @@ var reloads;
       
       <input id="name" name='name'>
       <p> Имя</p>
-      <br>
+      
      
  <input id="phone" name='phone'>
    <p> Телефон</p>
@@ -38,15 +38,7 @@ var reloads;
 
 
 
- 
-        
-        
-        
-      <br>  
-        
-    
-      
-      <br>
+
   </fieldset>
           
           
