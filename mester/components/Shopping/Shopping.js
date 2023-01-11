@@ -362,8 +362,8 @@ var forms = document.getElementById('form');
      
     
 var selects = document.getElementById("country");
-var val_ues = selects.value;
-console.log(val_ues); 
+var phone_sel = selects.value;
+console.log(phone_sel); 
 
        
         
@@ -392,8 +392,9 @@ let regex = /^((8|\+374|\+994|\+995|\+375|\+7|\+380|\+38|\+996|\+998|\+993)[\- ]
    
         
         
-        
-let phone = forms.phone.value;
+let        
+let phone = phone_sel + forms.phone.value;
+   console.log(phone);     
 if (!validatePhone(phone)){
   console.log('Не соответствует');
 }else{
