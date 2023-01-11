@@ -304,8 +304,8 @@ if (dey_utr == 0) {
     
     const shoppingPage = new Shopping();
     
-var polit;
-var per;
+var polit = 0;
+var per = 0;
 
 function polit_con(){
     polit = 1;
