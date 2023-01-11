@@ -29,10 +29,10 @@ var reloads;
       <input id="name" name='name'>
       <p> Имя</p>
       
-     <select id="country" class="form-control"  onChange="javascript: doIcon( this.value );" style="width: 65px;" class="icon">
-      <option style="background-image: url(https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png);"  class="icon" value="ru"> +7</option>
-      <option value="ua">Украина +380</option>
-      <option value="by">Белоруссия +375</option>
+     <select id="country" class="form-control" >
+      <option value="ru">RUS +7</option>
+      <option value="ua">UA +380</option>
+      <option value="by">BLR +375</option>
     </select>  
  <input id="phone" name='phone'>
    <p> Телефон</p>
