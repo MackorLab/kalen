@@ -176,10 +176,7 @@
 
 
 /* Форма */
- input {
-      display: inline-block !important;
-      width: auto !important;
-    }
+
 
     #country,
     #phone {
@@ -187,6 +184,4 @@
       width: auto;
     }
 
-    label[for="phone"] {
-     
-    }
+    
