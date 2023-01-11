@@ -30,24 +30,8 @@ var reloads;
       
       <br>
       <p> Телефон</p>
-        
-     
-
-
-
-
-
-  <div class="form-group">
-    <label for="phone">Телефон: </label>
-   <select id="agriculture">
-  <option value="3100">🇧🇾🇺</option>
-  <option value="2500">🇧🇪</option>
-  <option value="3100">🇷🇺</option>
-  <option value="2400">🇷🇺</option>
-  <option value="1850">😃</option>
-</select> 
-     <input id="phone" name='phone'>
-  </div>
+ <input id="phone" name='phone'>
+  
 
 
 
