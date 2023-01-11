@@ -392,7 +392,7 @@ let regex = /^((8|\+374|\+994|\+995|\+375|\+7|\+380|\+38|\+996|\+998|\+993)[\- ]
    
         
         
-let        
+      
 let phone = phone_sel + forms.phone.value;
    console.log(phone);     
 if (!validatePhone(phone)){
