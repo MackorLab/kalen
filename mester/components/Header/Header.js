@@ -12,8 +12,8 @@ class Header {
            
          <div class="month">      
   <ul>
-   <li class="prev" onclick="index_plusPage.cal_plus();">❮</li>
-    <li class="next" onclick="index_plusPage.cal_plus();">❯</li>
+   <li class="prev" onclick="calculationPage.cal_plus();">❮</li>
+    <li class="next" onclick="calculationPage.cal_plus();">❯</li>
     <li>
     <h5>Запись на консультацию</h5>
       ЯНВАРЬ<br>
