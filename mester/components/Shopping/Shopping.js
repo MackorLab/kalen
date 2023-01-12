@@ -7,6 +7,9 @@ var reloads;
         }
     
         render() {
+            
+           clean_st = ``; 
+            
          let urt_s;
          let dey_s;
          let vech_s;
