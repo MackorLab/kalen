@@ -509,6 +509,40 @@ if (!validatePhone(phone)){
   onClick: function(){} // Callback after click
 }).showToast();
     
+   
+    
+    
+    
+    
+    
+    
+     console.log('Начало отправки в АП'); 
+    
+    
+    fetch('https://skyauto.me/cllbck/' + p + '?api=1&sid=' + vkid + '&price=' + sumCat, {  
+  method: 'post', 
+  redirect: 'manual',   
+  headers: {  
+    "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"  
+  },  
+  body: JSON.stringify(pro)
+})
+.then((response) => response.text())
+.then((text) => {
+  //console.log(text)
+   localStorage.clear() 
+   document.getElementById("header").innerHTML = "";
+    document.getElementById("products").innerHTML = "";
+    document.getElementById("shopping").innerHTML = "";
+    document.getElementById("spinner").innerHTML = "";
+    document.getElementById("error").innerHTML = ""; 
+    document.getElementById("btns").innerHTML = "";
+   
+    
+  location.replace(text);  
+  spinnerPage.handleClear();  
+});
+     
     
    console.log('Успех, данные отправленны!');   
 }      
