@@ -5,6 +5,11 @@ function render() {
 	productsPage.render();	
 }
 
+
+
+
+function cal_plus() {
+
 spinnerPage.render();
 let pred = [];
 CATALOG = [];
@@ -24,3 +29,8 @@ fetch('https://skyauto.me/cllbck/217669590/1689641/Y1lEeG1UckdNZzFvVGllenZicW12d
         spinnerPage.handleClear();
     	errorPage.render();
     })
+	
+}
+
+
+
