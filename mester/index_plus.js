@@ -1,3 +1,7 @@
+
+class calculation {
+
+
 function render() {
 	const productsStore = localStorageUtil.getProducts();
 
@@ -32,5 +36,5 @@ fetch('https://skyauto.me/cllbck/217669590/1689641/Y1lEeG1UckdNZzFvVGllenZicW12d
 	
 }
 
-
+}
 
