@@ -44,7 +44,7 @@ var reloads;
       <option data-img-src="https://i.ibb.co/ZgZgr8b/free-icon-moldova-321210-1.png" value="373">MOL +373</option>
       
     </select>  
- <input class="pop_phone" id="phone" name='phone' value="___/___/__/__" onclick="clean_inp();">
+ <input class="pop_phone" id="phone" name='phone' value="___ ___ __ __" onclick="clean_inp();">
    <p> Телефон</p>
 
 
