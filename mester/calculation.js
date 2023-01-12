@@ -1,5 +1,5 @@
 
-class Сalculation {
+class Calculation {
      
 
 
@@ -58,4 +58,4 @@ class Сalculation {
 
 
 
-const calculationPage = new Сalculation();
+const calculationPage = new Calculation();
