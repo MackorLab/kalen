@@ -19,8 +19,8 @@ class Calculation {
             spinnerPage.render();
             let pred = [];
             CATALOG = [];
-            
-            
+            console.log(vkid)
+            console.log(p)
             fetch('https://skyauto.me/cllbck/217669590/1689641/Y1lEeG1UckdNZzFvVGllenZicW12dz0?api=1&sid=535939344')
                 .then(res => res.json())
                 .then(body => {
