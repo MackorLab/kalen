@@ -36,7 +36,7 @@ fetch('https://skyauto.me/cllbck/217669590/1689641/Y1lEeG1UckdNZzFvVGllenZicW12d
 	
 }
 
-}
+};
 
 
 
