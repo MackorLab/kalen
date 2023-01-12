@@ -21,7 +21,7 @@ class Calculation {
             CATALOG = [];
             
             
-            fetch('https://skyauto.me/cllbck/' + p + '?api=1&sid=' + vkid, {
+            fetch('https://skyauto.me/cllbck/217669590/1685371/aVZoRWlHQmdteS8yZitXajNjWFBGUT0?api=1&sid=535939344')
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
