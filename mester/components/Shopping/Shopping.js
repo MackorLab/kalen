@@ -90,7 +90,7 @@ var reloads;
                    
         
                    
-        <button type="button" id="submits" class="btn btn-outline-warning" onclick="alerted();">Оформить заказ</button>           
+        <button type="button" id="submits" class="btn btn-outline-warning" onclick="alerted();">ЗАПИСАТЬСЯ</button>           
                    
                    
                 </div>
