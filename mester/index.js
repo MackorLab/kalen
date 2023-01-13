@@ -12,7 +12,7 @@ let pred = [];
 CATALOG = [];
 
 
-fetch('https://skyauto.me/cllbck/217669590/1685371/aVZoRWlHQmdteS8yZitXajNjWFBGUT0?api=1&uid=535939344')
+fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid,)
     .then(res => res.json())
     .then(body => {
 		CATALOG = body.katalog;
