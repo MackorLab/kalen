@@ -36,13 +36,42 @@ class Calculation {
                       errorPage.render();
                 })
                   
-            }
+            };
 
 
 
 
 
+ cal_minus() {
 
+            spinnerPage.render();
+            let pred = [];
+            CATALOG = [];
+            console.log(vkid)
+            console.log(p)
+            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid,)
+                .then(res => res.json())
+                .then(body => {
+                        CATALOG = body.katalog;
+            
+                        setTimeout(() => {
+                              spinnerPage.handleClear();
+                              render();
+                        }, 1000);
+                })
+                .catch(() => {
+                    spinnerPage.handleClear();
+                      errorPage.render();
+                })
+                  
+            };
+
+
+     
+     
+     
+     
+     
 
 
 
