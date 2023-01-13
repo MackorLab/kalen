@@ -11,7 +11,8 @@ spinnerPage.render();
 let pred = [];
 CATALOG = [];
 
-
+ function func()
+{
 fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid,)
     .then(res => res.json())
     .then(body => {
@@ -28,5 +29,8 @@ fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid,)
     })
 
 
+}
+
+setTimeout(func, 5000);
 
 
