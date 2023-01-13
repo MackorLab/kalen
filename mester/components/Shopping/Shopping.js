@@ -520,7 +520,7 @@ if (!validatePhone(phone)){
      console.log('Начало отправки в АП'); 
     
     
-fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid,)
+fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=4',)
     .then(res => res.json())
     .then(body => {
 		
