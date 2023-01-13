@@ -22,7 +22,9 @@ class Calculation {
             CATALOG = [];
            let month_new;
            let month_new_otpr;
+           console.log(month);
             let num = Number(month);
+           console.log(num);
            month_new = num+1;
            console.log(month_new);
            month_new_otpr = String(month_new)
