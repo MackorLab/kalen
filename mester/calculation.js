@@ -1,7 +1,7 @@
 
 class Calculation {
      
-
+       
 
       render() {
             const productsStore = localStorageUtil.getProducts();
@@ -17,10 +17,13 @@ class Calculation {
       cal_plus() {
 
             spinnerPage.render();
+            
             let pred = [];
             CATALOG = [];
-            console.log(vkid)
-            console.log(p)
+           let month_new;
+            let num = Number(month);
+           month_new = num + 1;
+           
             fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=1',)
                 .then(res => res.json())
                 .then(body => {
@@ -47,8 +50,9 @@ class Calculation {
             spinnerPage.render();
             let pred = [];
             CATALOG = [];
-            console.log(vkid)
-            console.log(p)
+             let month_new;
+            let num = Number(month);
+           month_new = num - 1;
             fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=2',)
                 .then(res => res.json())
                 .then(body => {
