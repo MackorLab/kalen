@@ -29,7 +29,7 @@ class Calculation {
            console.log(month_new);
            month_new_otpr = String(month_new)
            console.log(month_new_otpr);
-            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=1&month=' + month_new_otpr + '&dey=0&periud=0',)
+            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=1&month=' + month_new_otpr + '&id_dey=0&periud=0',)
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
@@ -63,7 +63,7 @@ class Calculation {
            console.log(month_new);
            month_new_otpr = String(month_new)
            console.log(month_new_otpr);
-            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=1&month=' + month_new_otpr + '&dey=0&periud=0',)
+            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=1&month=' + month_new_otpr + '&id_dey=0&periud=0',)
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
