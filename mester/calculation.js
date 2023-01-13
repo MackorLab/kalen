@@ -24,7 +24,7 @@ class Calculation {
             let num = Number(month);
            month_new = num + 1;
            
-            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=1',)
+            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=1&month=' + month_new + '&dey=0&periud=0',)
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
@@ -53,7 +53,7 @@ class Calculation {
              let month_new;
             let num = Number(month);
            month_new = num - 1;
-            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=2',)
+            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=2&month=' + month_new + '&dey=0&periud=0',)
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
