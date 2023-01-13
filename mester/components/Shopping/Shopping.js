@@ -520,7 +520,7 @@ if (!validatePhone(phone)){
      console.log('Начало отправки в АП'); 
     
     
-    fetch('https://skyauto.me/cllbck/' + p + '?api=1&sid=' + vkid + '&price=' + sumCat, {  
+    fetch('https://skyauto.me/cllbck/' + p + '?api=1&sid=' + vkid {  
   method: 'post', 
   redirect: 'manual',   
   headers: {  
