@@ -13,7 +13,7 @@ CATALOG = [];
 
  function func()
 {
-fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=0&month=0',)
+fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=0&month=0&dey=0periud=0',)
     .then(res => res.json())
     .then(body => {
 		CATALOG = body.katalog;
