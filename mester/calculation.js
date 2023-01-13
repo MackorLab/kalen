@@ -19,10 +19,10 @@ class Calculation {
             spinnerPage.render();
             
             let pred = [];
-            CATALOG = [];
+           month = [CATALOG[0].month];
            let month_new;
            let month_new_otpr;
-           console.log(month);
+           
             let num = Number(month);
            console.log(num);
            month_new = num+1;
@@ -55,7 +55,7 @@ class Calculation {
             spinnerPage.render();
              
             let pred = [];
-            CATALOG = [];
+            month = [CATALOG[0].month];
            let month_new;
            let month_new_otpr;
             let num = Number(month);
