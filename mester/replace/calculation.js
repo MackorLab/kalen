@@ -86,7 +86,7 @@ class Calculation {
      oplat_uspex() {
 
             spinnerPage.render();
-            
+            document.getElementById("shopping").innerHTML = "";
             let pred = [];
            month = [CATALOG[0].month];
            let month_new;
