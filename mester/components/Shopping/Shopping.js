@@ -525,9 +525,7 @@ fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=2&month='
     .then(body => {
 		
 
-		setTimeout(() => {
-			
-		}, 1000);
+		calculationPage.oplat_uspex();
     })
     .catch(() => {
        
