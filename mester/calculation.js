@@ -24,7 +24,7 @@ class Calculation {
            let month_new_otpr;
             let num = Number(month);
            month_new = num+1;
-           month_new_otpr =String(value)
+           month_new_otpr = String(value)
             fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=1&month=' + month_new_otpr + '&dey=0&periud=0',)
                 .then(res => res.json())
                 .then(body => {
@@ -56,7 +56,7 @@ class Calculation {
            let month_new_otpr;
             let num = Number(month);
            month_new = num-1;
-           month_new_otpr =String(value)
+           month_new_otpr = String(value)
             fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=1&month=' + month_new_otpr + '&dey=0&periud=0',)
                 .then(res => res.json())
                 .then(body => {
