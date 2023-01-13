@@ -520,24 +520,19 @@ if (!validatePhone(phone)){
      console.log('Начало отправки в АП'); 
     
     
-    fetch('https://skyauto.me/cllbck/' + p + '?api=1&sid=' + vkid {  
-  method: 'post', 
-  redirect: 'manual',   
-  headers: {  
-    "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"  
-  },  
-  body: JSON.stringify(pro)
-})
-.then((response) => response.text())
-.then((text) => {
-  //console.log(text)
- 
-    
-    
-    
-    
-    
-});
+fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid,)
+    .then(res => res.json())
+    .then(body => {
+		
+
+		setTimeout(() => {
+			
+		}, 1000);
+    })
+    .catch(() => {
+       
+    })
+
      
     
    console.log('Успех, данные отправленны!');   
