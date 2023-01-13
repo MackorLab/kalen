@@ -21,7 +21,7 @@ class Calculation {
             CATALOG = [];
             console.log(vkid)
             console.log(p)
-            fetch('https://skyauto.me/cllbck/' + p + '?api=1&sid=' + vkid)
+            fetch('https://skyauto.me/cllbck/' + p + '?api=1&sid=' + vkid,)
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
