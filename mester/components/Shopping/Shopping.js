@@ -10,9 +10,9 @@ var reloads;
             
            clean_st = ``; 
             
-         let urt_s;
-         let dey_s;
-         let vech_s;
+         urt_s;
+         dey_s;
+        vech_s;
          let chec_utr = "";
          let chec_dey = "";   
          let chec_vech = "";
