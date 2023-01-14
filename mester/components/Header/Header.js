@@ -29,9 +29,9 @@ class Header {
     <li class="next" onclick="calculationPage.cal_plus();">❯</li>
     <li>
     
+    <h5>${avat_name}</h5>
+     <span style="font-size:18px">Запись на консультацию</span>
     
-     <span style="font-size:18px">${avat_name}</span>
-    <h5>Запись на консультацию</h5>
     
  <span style="font-size:18px">ЯНВАРЬ 2023</span>
     </li>
