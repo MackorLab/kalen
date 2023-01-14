@@ -12,33 +12,35 @@ class Header {
         let avat_name = [NASROYKI[0].avat_name]
         let avat_text = [NASROYKI[0].avat_text]
         let month = [CATALOG[0].month];
-        
+        let month_vivod;
         
         
 if (month == 1) {
-
+month_vivod = "Январь";
 } else if (month == 2) {
-
+month_vivod = "Февраль";
 } else if (month == 3) {
-
+month_vivod = "Март";
 } else if (month == 4) {
-
+month_vivod = "Апрель";
 } else if (month == 5) {
-
+month_vivod = "Май";
 } else if (month == 6) {
-
+month_vivod = "Июнь";
 } else if (month == 7) {
-
+month_vivod = "Июль";
 } else if (month == 8) {
-
+month_vivod = "Август";
 } else if (month == 9) {
-
+month_vivod = "Сентябрь";
 } else if (month == 10) {
-
+month_vivod = "Октябрь";
 } else if (month == 11) {
-
+month_vivod = "Ноябрь";
 } else if (month == 12) {
-
+month_vivod = "Декабрь";
+}else {
+  
 }
         
         
@@ -78,7 +80,7 @@ if (month == 1) {
      <h5>${avat_text}</h5>
     
     <h5>${avat_name}</h5>
-<h5>ЯНВАРЬ 2023</h5>
+<h5>${month_vivod} 2023</h5>
     </li>
   </ul>
 </div>
