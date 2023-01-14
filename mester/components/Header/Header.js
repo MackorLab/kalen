@@ -27,8 +27,8 @@ class Header {
     
     
     <h5>Запись на консультацию</h5>
-      ЯНВАРЬ<br>
-      <span style="font-size:18px">2023</span>
+    
+ <span style="font-size:18px">ЯНВАРЬ 2023</span>
     </li>
   </ul>
 </div>
