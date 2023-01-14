@@ -16,7 +16,7 @@ class Header {
 <style>
 .mimg {
   border-radius: 50%;
-  width:120px
+  width:120px;
   border-color: ${avat_img_b_c};
   border-width: ${avat_img_b_s};
 
