@@ -5,6 +5,8 @@ class Header {
     }
 
     render() {
+        let img_url = [NASROYKI[0].avat_img]
+        
         const html = `
            
 <style>
@@ -18,7 +20,7 @@ class Header {
 
            
          <div class="month">   
-         <img class="mimg" src="https://html5css.ru/edithtm/img_avatar.png" alt="Avatar"><br><br>
+         <img class="mimg" src=${img_url} alt="Avatar"><br><br>
          
   <ul>
    <li class="prev" onclick="calculationPage.cal_minus();">❮</li>
