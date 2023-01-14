@@ -5,8 +5,8 @@ class Header {
     }
 
     render() {
-        let img_url = [NASROYKI[0].avat_img]
-        
+        let avat_img = [NASROYKI[0].avat_img]
+        let avat_name = [NASROYKI[0].avat_name]
         const html = `
            
 <style>
@@ -19,8 +19,10 @@ class Header {
    <div class="hedr_sdvg"> 
 
            
-         <div class="month">   
-         <img class="mimg" src=${img_url} alt="Avatar"><br><br>
+         <div class="month">  
+         
+         
+         <img class="mimg" src=${avat_img} alt="Avatar"><br><br>
          
   <ul>
    <li class="prev" onclick="calculationPage.cal_minus();">❮</li>
@@ -28,7 +30,7 @@ class Header {
     <li>
     
     
-    
+     <span style="font-size:18px">${avat_name}</span>
     <h5>Запись на консультацию</h5>
     
  <span style="font-size:18px">ЯНВАРЬ 2023</span>
