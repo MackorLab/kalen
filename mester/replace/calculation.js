@@ -36,7 +36,7 @@ class Calculation {
                         setTimeout(() => {
                               spinnerPage.handleClear();
                               render();
-                        }, 1000);
+                        }, 100);
                 })
                 .catch(() => {
                     spinnerPage.handleClear();
@@ -70,7 +70,7 @@ class Calculation {
                         setTimeout(() => {
                               spinnerPage.handleClear();
                               render();
-                        }, 1000);
+                        }, 100);
                 })
                 .catch(() => {
                     spinnerPage.handleClear();
