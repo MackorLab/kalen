@@ -32,7 +32,8 @@ class Calculation {
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
-            
+                        NASROYKI = body.set;
+                  console.log(NASROYKI);
                         setTimeout(() => {
                               spinnerPage.handleClear();
                               render();
