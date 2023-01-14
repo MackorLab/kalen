@@ -24,7 +24,7 @@ class Header {
 .month {
     padding: 50px 25px;
     width: 100%;
-    background: ${avat_color};
+    background: ${avat_fon_color};
     text-align: center;
 }
 </style>     
