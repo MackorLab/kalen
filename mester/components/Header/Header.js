@@ -5,7 +5,7 @@ class Header {
     }
 
     render() {
-        let avat_fon_color = [NASROYKI[0].avat_color]
+        let avat_fon_color = [NASROYKI[0].avat_fon_color]
         let avat_img = [NASROYKI[0].avat_img]
         let avat_img_b_c = [NASROYKI[0].avat_img_b_c]
         let avat_img_b_s = [NASROYKI[0].avat_img_b_s]
