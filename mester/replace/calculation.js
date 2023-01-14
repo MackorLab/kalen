@@ -34,8 +34,7 @@ class Calculation {
                         CATALOG = body.katalog;
                         NASROYKI = body.set;
                  
-               let img_url = [NASROYKI[0].avat_img]
-                  console.log(img_url);
+               
                         setTimeout(() => {
                               spinnerPage.handleClear();
                               render();
@@ -69,7 +68,7 @@ class Calculation {
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
-            
+            NASROYKI = body.set;
                         setTimeout(() => {
                               spinnerPage.handleClear();
                               render();
@@ -105,7 +104,7 @@ class Calculation {
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
-            
+            NASROYKI = body.set;
                         setTimeout(() => {
                               spinnerPage.handleClear();
                               render();
