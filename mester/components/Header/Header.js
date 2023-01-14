@@ -5,8 +5,10 @@ class Header {
     }
 
     render() {
-        let avat_color = [NASROYKI[0].avat_color]
+        let avat_fon_color = [NASROYKI[0].avat_color]
         let avat_img = [NASROYKI[0].avat_img]
+        let avat_img_b_c = [NASROYKI[0].avat_img_b_c]
+        let avat_img_b_s = [NASROYKI[0].avat_img_b_s]
         let avat_name = [NASROYKI[0].avat_name]
         let avat_text = [NASROYKI[0].avat_text]
         const html = `
@@ -15,6 +17,8 @@ class Header {
 .mimg {
   border-radius: 50%;
   width:120px
+  border-color: ${avat_img_b_c};
+  border-width: ${avat_img_b_s};
 
 }
 .month {
