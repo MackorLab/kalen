@@ -4,7 +4,7 @@ class Header {
         shoppingPage.render();
     }
 
-    render(count) {
+    render() {
         const html = `
            
               
