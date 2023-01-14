@@ -16,12 +16,14 @@ class Header {
    <div class="hedr_sdvg"> 
 
            
-         <div class="month">      
+         <div class="month">   
+         <img class="mimg" src="https://html5css.ru/edithtm/img_avatar.png" alt="Avatar"><br>
+         
   <ul>
    <li class="prev" onclick="calculationPage.cal_minus();">❮</li>
     <li class="next" onclick="calculationPage.cal_plus();">❯</li>
     <li>
-    <img class="mimg" src="https://html5css.ru/edithtm/img_avatar.png" alt="Avatar">
+    
     
     
     <h5>Запись на консультацию</h5>
