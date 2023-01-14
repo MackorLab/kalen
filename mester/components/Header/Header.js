@@ -18,7 +18,7 @@ class Header {
 
            
          <div class="month">   
-         <img class="mimg" src="https://html5css.ru/edithtm/img_avatar.png" alt="Avatar"><br><br><br>
+         <img class="mimg" src="https://html5css.ru/edithtm/img_avatar.png" alt="Avatar"><br><br>
          
   <ul>
    <li class="prev" onclick="calculationPage.cal_minus();">❮</li>
