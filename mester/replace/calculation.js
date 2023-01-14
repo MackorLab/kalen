@@ -33,7 +33,9 @@ class Calculation {
                 .then(body => {
                         CATALOG = body.katalog;
                         NASROYKI = body.set;
-                  console.log(NASROYKI);
+                 
+               let img_url = [NASROYKI[0].avat_img]
+                  console.log(img_url);
                         setTimeout(() => {
                               spinnerPage.handleClear();
                               render();
