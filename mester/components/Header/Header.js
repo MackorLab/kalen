@@ -12,7 +12,7 @@ class Header {
 <style>
 .mimg {
   border-radius: 50%;
-  width:150px
+  width:120px
 
 }
 </style>     
