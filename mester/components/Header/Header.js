@@ -5,8 +5,10 @@ class Header {
     }
 
     render() {
-        let avat_img = [NASROYKI[0].avat_img]
-        let avat_name = [NASROYKI[0].avat_name]
+        let avat_color = [NASROYKI[0].avat_color];
+        let avat_img = [NASROYKI[0].avat_img];
+        let avat_name = [NASROYKI[0].avat_name];
+        let avat_text = [NASROYKI[0].avat_text];
         const html = `
            
 <style>
@@ -14,6 +16,12 @@ class Header {
   border-radius: 50%;
   width:120px
 
+}
+.month {
+    padding: 50px 25px;
+    width: 100%;
+    background: ${avat_color};
+    text-align: center;
 }
 </style>     
    <div class="hedr_sdvg"> 
@@ -30,7 +38,7 @@ class Header {
     <li>
     
     
-     <h5>Запись на консультацию</h5>
+     <h5>${avat_text}</h5>
     
     <h5>${avat_name}</h5>
 <h5>ЯНВАРЬ 2023</h5>
