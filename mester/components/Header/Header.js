@@ -5,10 +5,10 @@ class Header {
     }
 
     render() {
-        let avat_color = [NASROYKI[0].avat_color];
-        let avat_img = [NASROYKI[0].avat_img];
-        let avat_name = [NASROYKI[0].avat_name];
-        let avat_text = [NASROYKI[0].avat_text];
+        let avat_color = [NASROYKI[0].avat_color]
+        let avat_img = [NASROYKI[0].avat_img]
+        let avat_name = [NASROYKI[0].avat_name]
+        let avat_text = [NASROYKI[0].avat_text]
         const html = `
            
 <style>
