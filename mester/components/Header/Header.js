@@ -17,10 +17,8 @@ class Header {
 .mimg {
   border-radius: 50%;
   width:120px;
-  border-color: ${avat_img_b_c};
-  border-width: ${avat_img_b_s};
-
-}
+   border: ${avat_img_b_s} solid ${avat_img_b_c};
+ }
 .month {
     padding: 50px 25px;
     width: 100%;
