@@ -7,14 +7,23 @@ class Header {
     render() {
         const html = `
            
-              
-   <div class="hedr_sdvg">  
+<style>
+.mimg {
+  border-radius: 50%;
+  width:150px
+}
+</style>     
+   <div class="hedr_sdvg"> 
+
            
          <div class="month">      
   <ul>
    <li class="prev" onclick="calculationPage.cal_minus();">❮</li>
     <li class="next" onclick="calculationPage.cal_plus();">❯</li>
     <li>
+    <img class="mimg" src="https://html5css.ru/edithtm/img_avatar.png" alt="Avatar">
+    
+    
     <h5>Запись на консультацию</h5>
       ЯНВАРЬ<br>
       <span style="font-size:18px">2023</span>
