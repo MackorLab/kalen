@@ -11,6 +11,41 @@ class Header {
         let avat_img_b_s = [NASROYKI[0].avat_img_b_s]
         let avat_name = [NASROYKI[0].avat_name]
         let avat_text = [NASROYKI[0].avat_text]
+        let month = [CATALOG[0].month];
+        
+        
+        
+if (month == 1) {
+
+} else if (month == 2) {
+
+} else if (month == 3) {
+
+} else if (month == 4) {
+
+} else if (month == 5) {
+
+} else if (month == 6) {
+
+} else if (month == 7) {
+
+} else if (month == 8) {
+
+} else if (month == 9) {
+
+} else if (month == 10) {
+
+} else if (month == 11) {
+
+} else if (month == 12) {
+
+}
+        
+        
+        
+        
+        
+        
         const html = `
            
 <style>
