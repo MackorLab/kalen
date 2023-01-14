@@ -17,7 +17,7 @@ fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=0&month=0
     .then(res => res.json())
     .then(body => {
 		CATALOG = body.katalog;
-
+NASROYKI = body.set;
 		setTimeout(() => {
 			spinnerPage.handleClear();
 			render();
