@@ -11,7 +11,7 @@ class Header {
 .mimg {
   border-radius: 50%;
   width:150px
-margin: 0px auto 30px auto;
+margin: 0px 3px 30px 3px;
 }
 </style>     
    <div class="hedr_sdvg"> 
