@@ -30,10 +30,10 @@ class Header {
     <li>
     
     
-     <span style="font-size:18px">Запись на консультацию</span>
+     <h5>Запись на консультацию</h5>
     
     <h5>${avat_name}</h5>
- <span style="font-size:18px">ЯНВАРЬ 2023</span>
+<h5>ЯНВАРЬ 2023</h5>
     </li>
   </ul>
 </div>
