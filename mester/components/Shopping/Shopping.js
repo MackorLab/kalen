@@ -571,7 +571,7 @@ fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=2&month='
                               spinnerPage.handleClear();
 	                   ROOT_SHOPPING.innerHTML = '';
 	
-	spinnerPage.handleClear();
+	setTimeout(() => {
 	render();  
         }, 1000);               
     })
