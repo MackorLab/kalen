@@ -573,7 +573,7 @@ fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=2&month='
 	
 	spinnerPage.handleClear();
 	render();  
-        }, 300);               
+        }, 1000);               
     })
     .catch(() => {
        
