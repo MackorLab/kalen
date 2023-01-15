@@ -561,19 +561,20 @@ if (!validateEmail(emails)){
     
      console.log('Начало отправки в АП'); 
     
-    
+    spinnerPage.render();
 fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=2&month=' + month + '&id_dey=' + id_dey + '&periud=' + cech,)
     .then(res => res.json())
     .then(body => {
 		CATALOG = body.katalog;
             NASROYKI = body.set;
                        
-                              spinnerPage.handleClear();
+                              
 	                   ROOT_SHOPPING.innerHTML = '';
 	
-	setTimeout(() => {
+	
 	render();  
-        }, 1000);               
+	spinnerPage.handleClear();
+                     
     })
     .catch(() => {
        
