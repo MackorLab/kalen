@@ -13,7 +13,9 @@ class Header {
         let avat_text = [NASROYKI[0].avat_text]
         let month = [CATALOG[0].month];
         let month_vivod;
-        
+        let avat_s_name = [NASROYKI[0].avat_s_name]
+        let avat_s_text = [NASROYKI[0].avat_s_name]
+        let avat_s_data = [NASROYKI[0].avat_s_name]
         
 if (month == 1) {
 month_vivod = "Январь";
@@ -77,10 +79,10 @@ month_vivod = "Декабрь";
     <li>
     
     
-     <h5>${avat_text}</h5>
+     <h${avat_s_text}>${avat_text}</h${avat_s_text}>
     
-    <h5>${avat_name}</h5>
-<h5>${month_vivod} 2023</h5>
+    <h${avat_s_name}>${avat_name}</h${avat_s_name}>
+<h${avat_s_data}>${month_vivod} 2023</h${avat_s_data}>
     </li>
   </ul>
 </div>
