@@ -48,7 +48,8 @@ var reloads;
  <input class="pop_phone" id="phone" name='phone' value="" onclick="clean_inp();">
    <p>Телефон(код страны уже заполнен)</p>
 
-
+ <input class="pop_phone" id="email" name='email' value="" onclick="clean_inp_email();">
+   <p>Email</p>
 
 
 
@@ -398,6 +399,12 @@ let regex = /^((8|\+374|\+994|\+995|\+375|\+7|\+380|\+38|\+996|\+998|\+993)[\- ]
  return regex.test(phone);
 };
 
+ function validateEmail(emails){
+let regex = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+ return regex.test(emails);
+};	    
+	    
+	    
 let selects = document.getElementById("country");
 let phone_sel = selects.value;
 console.log(phone_sel);  
@@ -413,7 +420,19 @@ if (!validatePhone(phone)){
 };     
   
         
-        
+ let emails = forms.email.value;    
+
+   console.log(emails);     
+if (!validateEmail(emails)){
+  console.log('emai Не соответствует');
+}else{
+  console.log('emaiСоответствует');
+};     
+  
+    
+	    
+	    
+	    
         
         
   if (!validateNames(names)) {
