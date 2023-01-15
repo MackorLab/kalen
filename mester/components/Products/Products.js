@@ -23,6 +23,12 @@ class Products {
         let htmlCatalog = '';
 
         CATALOG.forEach(({ id, month, dey, dey_utr, dey_dey, dey_vech, sdvig}) => {
+		
+		
+	let dey_c_on = [NASROYKI[0].dey_c_on]
+	let dey_c_off = [NASROYKI[0].dey_c_off]
+	let dey_c_none = [NASROYKI[0].dey_c_none]
+		
           let col_utr;
 	  let col_dey;	
           let col_vech;  
@@ -37,36 +43,36 @@ class Products {
         c = String(cards);
 		
 if (dey_utr === 0) {
-  col_utr = "#33cc33";
+  col_utr = dey_c_on;
 } else if (dey_utr === 1) {
-   col_utr = "#cc3333";
+   col_utr = dey_c_off;
 } else if (dey_utr === 2) {
-   col_utr = "#b2d6b2";
+   col_utr = dey_c_none;
 }  else {
-   col_utr = "#b2d6b2";
+   col_utr = dey_c_none;
 }	
 
 
 if (dey_dey === 0) {
- col_dey = "#33cc33";
+ col_dey = dey_c_on;
 } else if (dey_dey === 1) {
-   col_dey = "#cc3333";
+   col_dey = dey_c_off;
 } else if (dey_dey === 2) {
-   col_dey = "#b2d6b2";
+   col_dey = dey_c_none;
 }  else {
-   col_dey = "#b2d6b2";
+   col_dey = dey_c_none;
 }	
 
 		
 		
 if (dey_vech === 0) {
-col_vech = "#33cc33";
+col_vech = dey_c_on;
 } else if (dey_vech === 1) {
-    col_vech = "#cc3333";
+    col_vech = dey_c_off;
 } else if (dey_vech === 2) {
-   col_vech = "#b2d6b2";
+   col_vech = dey_c_none;
 }  else {
-   col_vech = "#b2d6b2";
+   col_vech = dey_c_none;
 }	
 		
 		
