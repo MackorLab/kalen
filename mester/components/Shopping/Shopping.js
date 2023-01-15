@@ -19,8 +19,51 @@ var reloads;
          let chec_vech = "";
          var html_vivod = ``; 
          var html_chek = ``;
-            
-            var htm_test = ``;
+         let month_vivod;   
+          var htm_test = ``;
+		
+		
+		
+		
+		
+		
+        
+        
+if (month == 1) {
+month_vivod = "Января";
+} else if (month == 2) {
+month_vivod = "Февраля";
+} else if (month == 3) {
+month_vivod = "Марта";
+} else if (month == 4) {
+month_vivod = "Апреля";
+} else if (month == 5) {
+month_vivod = "Мая";
+} else if (month == 6) {
+month_vivod = "Июня";
+} else if (month == 7) {
+month_vivod = "Июля";
+} else if (month == 8) {
+month_vivod = "Августа";
+} else if (month == 9) {
+month_vivod = "Сентября";
+} else if (month == 10) {
+month_vivod = "Октября";
+} else if (month == 11) {
+month_vivod = "Ноября";
+} else if (month == 12) {
+month_vivod = "Декабря";
+}else {
+  
+}
+		
+		
+		
+		
+		
+		
+		
+		
             
           var html_Name_tel = `
   <div class="shopping-container">
