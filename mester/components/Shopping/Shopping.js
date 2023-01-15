@@ -546,7 +546,7 @@ if (!validateEmail(emails)){
   position: "left", // `left`, `center` or `right`
   stopOnFocus: true, // Prevents dismissing of toast on hover
   style: {
-    background: "linear-gradient(to right, #b00000, #e04343)",
+    background: "linear-gradient(to right, #02b002, #4ce056)",
   },
   onClick: function(){} // Callback after click
 }).showToast();
