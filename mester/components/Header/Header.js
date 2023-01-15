@@ -16,6 +16,10 @@ class Header {
         let avat_s_name = [NASROYKI[0].avat_s_name]
         let avat_s_text = [NASROYKI[0].avat_s_text]
         let avat_s_data = [NASROYKI[0].avat_s_data]
+        let avat_c_name = [NASROYKI[0].avat_c_name]
+        let avat_c_text = [NASROYKI[0].avat_c_text]
+        let avat_c_data = [NASROYKI[0].avat_c_data]
+        
         
 if (month == 1) {
 month_vivod = "Январь";
@@ -74,15 +78,15 @@ month_vivod = "Декабрь";
          <img class="mimg" src=${avat_img} alt="Avatar"><br><br>
          
   <ul>
-   <li class="prev" onclick="calculationPage.cal_minus();">❮</li>
-    <li class="next" onclick="calculationPage.cal_plus();">❯</li>
+   <li class="prev" onclick="calculationPage.cal_minus();" style = "color:${avat_c_text}">❮</li>
+    <li class="next" onclick="calculationPage.cal_plus();" style = "color:${avat_c_text}">❯</li>
     <li>
     
     
-     <h${avat_s_text}>${avat_text}</h${avat_s_text}>
+     <h${avat_s_text} style = "color:${avat_c_text}">${avat_text}</h${avat_s_text}>
     
-    <h${avat_s_name}>${avat_name}</h${avat_s_name}>
-<h${avat_s_data}>${month_vivod} 2023</h${avat_s_data}>
+    <h${avat_s_name} style = "color:${avat_c_name}">${avat_name}</h${avat_s_name}>
+<h${avat_s_data} style = "color:${avat_c_data}">${month_vivod} 2023</h${avat_s_data}>
     </li>
   </ul>
 </div>
