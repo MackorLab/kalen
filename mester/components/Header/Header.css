@@ -77,18 +77,4 @@ body {font-family: Verdana, sans-serif;}
     .weekdays li, .days li {width: 12.2%;}
 }
 
-#blink1 {
-	padding: 15px;
-  -webkit-animation: blink1 3s linear infinite;
-  animation: blink1 3s linear infinite;
-}
-@-webkit-keyframes blink1 {
-  0% { color: rgba(255, 0, 223, 1); }
-  50% { color: rgba(255, 0, 223, 0); }
-  100% { color: rgba(255, 0, 223, 1); }
-}
-@keyframes blink1 {
-  0% { color: rgba(255, 0, 223, 1); }
-  50% { color: rgba(255, 0, 223, 0); }
-  100% { color: rgba(255, 0, 223, 1); }
-}	
+
