@@ -190,15 +190,15 @@ if (dey_utr == 0) {
                         
                         <tr>
             
-  <label class="container_sho" style = "display:${urt_s}">Онлайн встреча 9 - 11 МСК
+  <label class="container_sho" style = "display:${urt_s}">Удобное время для звонка 9 - 11 МСК
   <input type="radio" id="rid1" name="rate" value="rid1" checked="checked">
   <span class="checkmark_sho"></span>
 </label>
-<label class="container_sho" style = "display:${dey_s}">Онлайн встреча 13 - 15 МСК
+<label class="container_sho" style = "display:${dey_s}">Удобное время для звонка 13 - 15 МСК
   <input type="radio" id="rid2" name="rate" value="rid2">
   <span class="checkmark_sho"></span>
 </label>
-<label class="container_sho" style = "display:${vech_s}">Онлайн встреча 17 - 19 МСК
+<label class="container_sho" style = "display:${vech_s}">Удобное время для звонка 17 - 19 МСК
   <input type="radio" id="rid3" name="rate" value="rid3">
   <span class="checkmark_sho"></span>
 </label>
