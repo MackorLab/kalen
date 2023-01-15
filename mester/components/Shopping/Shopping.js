@@ -25,8 +25,17 @@ var reloads;
           var html_Name_tel = `
   <div class="shopping-container">
               <a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/WFkZT76/imgonline-com-ua-Resize-g-CNOFAAJBXK.png" alt="shopping-cart"></a>
-                             
+              
+	      
+	       <div class="d-flex justify-content-center"> 
+	       <h5>${month_vivod}  ${dey}</h5>
+	      </div>
            <form id="form"  name='theForm'>
+	   
+	 
+	   
+	   
+	   
 <fieldset>
     
       
