@@ -82,10 +82,10 @@ month_vivod = "Декабрь";
     <li class="next" onclick="calculationPage.cal_plus();" style = "color:${avat_c_text}">❯</li>
     <li>
     
-    
+     <h${avat_s_name} style = "color:${avat_c_name}">${avat_name}</h${avat_s_name}>
      <h${avat_s_text} style = "color:${avat_c_text}">${avat_text}</h${avat_s_text}>
     
-    <h${avat_s_name} style = "color:${avat_c_name}">${avat_name}</h${avat_s_name}>
+   
 <h${avat_s_data} style = "color:${avat_c_data}">${month_vivod} 2023</h${avat_s_data}>
     </li>
   </ul>
