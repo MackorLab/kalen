@@ -569,6 +569,7 @@ fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=2&month='
             NASROYKI = body.set;
                        
                               spinnerPage.handleClear();
+	 ROOT_SHOPPING.innerHTML = '';
                               render();
                        
     })
