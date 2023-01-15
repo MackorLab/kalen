@@ -100,7 +100,7 @@ class Calculation {
            console.log(month_new);
            month_new_otpr = String(month_new)
            console.log(month_new_otpr);
-            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=0&month=0&id_dey=0&periud=0',)
+            fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=0&month='+ month +'&id_dey=0&periud=0',)
                 .then(res => res.json())
                 .then(body => {
                         CATALOG = body.katalog;
