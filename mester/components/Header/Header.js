@@ -14,8 +14,8 @@ class Header {
         let month = [CATALOG[0].month];
         let month_vivod;
         let avat_s_name = [NASROYKI[0].avat_s_name]
-        let avat_s_text = [NASROYKI[0].avat_s_name]
-        let avat_s_data = [NASROYKI[0].avat_s_name]
+        let avat_s_text = [NASROYKI[0].avat_s_text]
+        let avat_s_data = [NASROYKI[0].avat_s_data]
         
 if (month == 1) {
 month_vivod = "Январь";
