@@ -45,11 +45,13 @@ var reloads;
       <option data-img-src="https://i.ibb.co/ZgZgr8b/free-icon-moldova-321210-1.png" value="373">MOL +373</option>
       
     </select>  
+    <input class="pop_phone" id="email" name='email' value="" onclick="clean_inp_email();">
+   <p>Email</p>
+    
  <input class="pop_phone" id="phone" name='phone' value="" onclick="clean_inp();">
    <p>Телефон(код страны уже заполнен)</p>
 
- <input class="pop_phone" id="email" name='email' value="" onclick="clean_inp_email();">
-   <p>Email</p>
+ 
 
 
 
