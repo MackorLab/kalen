@@ -71,7 +71,7 @@ month_vivod = "Декабря";
               
 	      
 	       <div class="d-flex justify-content-center"> 
-	       <h5>${month_vivod}  ${dey}</h5>
+	       <h5>${dey} - ${month_vivod}</h5>
 	      </div>
            <form id="form"  name='theForm'>
 	   
