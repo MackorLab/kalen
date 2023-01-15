@@ -12,7 +12,7 @@ class Header {
         let avat_name = [NASROYKI[0].avat_name]
         let avat_text = [NASROYKI[0].avat_text]
         let month = [CATALOG[0].month];
-        
+        let month_vivod;
         
         
 if (month == 1) {
