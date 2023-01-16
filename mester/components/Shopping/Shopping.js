@@ -59,18 +59,7 @@ month_vivod = "Декабря";
 		
 		
 		
-	var html_style = `	
-<style>
-.tab :checked + .tab-title {
- background-color: #50a2de; /* Цвет фона */
- border-radius: 3px 3px 0 0; /* Скругляем уголки */
- color: #fff; /* Цвет текста */
- }
-	  
-	  
-</style>	
-		
-	`;	
+	
 		
             
           var html_Name_tel = `
@@ -257,7 +246,7 @@ if (dey_utr == 0) {
   
   `;
     
-   html_vivod = html_style + html_Name_tel + html_chek + html_but;
+   html_vivod = html_Name_tel + html_chek + html_but;
     
   
 } else if (dey_vech == 0) {
