@@ -164,7 +164,7 @@
    }
   
 .tab :checked + .tab-title {
- background-color: #50a2de;
+ 
  border-radius: 3px 3px 0 0; /* Скругляем уголки */
  color: #fff; /* Цвет текста */
  }
