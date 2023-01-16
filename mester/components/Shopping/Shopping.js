@@ -59,16 +59,8 @@ month_vivod = "Декабря";
 		
 		
 		
-		
-		
-		
-		
-		
-            
-          var html_Name_tel = `
-	  
-	  
- <style>
+	var html_style = `	
+<style>
 .tab :checked + .tab-title {
  background-color: #50a2de; /* Цвет фона */
  border-radius: 3px 3px 0 0; /* Скругляем уголки */
@@ -76,7 +68,15 @@ month_vivod = "Декабря";
  }
 	  
 	  
-</style>
+</style>	
+		
+	`;	
+		
+            
+          var html_Name_tel = `
+	  
+	  
+
   <div class="shopping-container">
               <a class="pop-icon" onclick="shoppingPage.handlerClear();"><img src="https://i.ibb.co/WFkZT76/imgonline-com-ua-Resize-g-CNOFAAJBXK.png" alt="shopping-cart"></a>
               
@@ -257,7 +257,7 @@ if (dey_utr == 0) {
   
   `;
     
-   html_vivod = html_Name_tel + html_chek + html_but;
+   html_vivod = html_style + html_Name_tel + html_chek + html_but;
     
   
 } else if (dey_vech == 0) {
