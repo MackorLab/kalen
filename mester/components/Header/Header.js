@@ -108,7 +108,7 @@ month_vivod = "Декабрь";
 	border-width: ${btn_bord_wid_s};
 	cursor: pointer;
 	
-	
+	transition-duration: 0.4s;
 	
 }
 
