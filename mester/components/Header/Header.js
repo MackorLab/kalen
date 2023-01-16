@@ -91,7 +91,7 @@ month_vivod = "Декабрь";
 	border-width: 4px;
 	cursor: pointer;
 	background-color: #0c4ccc;
-	font- font-size: 1.2em;
+	font-size: 1.2em;
 	
 }
 
