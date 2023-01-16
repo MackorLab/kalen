@@ -76,11 +76,7 @@ month_vivod = "Декабрь";
  }
 
 
-.chosen-container .chosen-results li.highlighted {
-  background-color: #acc1e3;
-  background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
-  color: #fff;
-}
+
 
 </style>     
    <div class="hedr_sdvg"> 
