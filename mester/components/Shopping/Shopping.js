@@ -147,7 +147,7 @@ month_vivod = "Декабря";
                    
         
                    
-        <button type="button" id="submits" class="btn btn-outline-warning" onclick="alerted();">ЗАПИСАТЬСЯ</button>           
+        <button type="button" id="submits" class="btn_send" onclick="alerted();">ЗАПИСАТЬСЯ</button>           
                    
                    
                 </div>
