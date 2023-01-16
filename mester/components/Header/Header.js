@@ -108,12 +108,12 @@ month_vivod = "Декабрь";
 	border-width: ${btn_bord_wid_s};
 	cursor: pointer;
 	
-	transition-duration: 0.4s;
+	transition-duration: 0.6s;
 	
 }
 
 .btn_send:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 7px 10px 14px 1px rgba(0,0,0,0.24),0 17px 50px 1px rgba(0,0,0,0.19);
 }
 </style>     
    <div class="hedr_sdvg"> 
