@@ -81,6 +81,20 @@ month_vivod = "Декабрь";
     background-color: #0c4ccc;
 }
 
+
+.btn_send {
+	margin-top: 5px;
+	padding:  5px  10px;
+	border: 1px solid #0c4ccc;
+	border-radius: 10px;
+	cursor: pointer;
+	outline: none;
+	background: none;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+
 </style>     
    <div class="hedr_sdvg"> 
 
