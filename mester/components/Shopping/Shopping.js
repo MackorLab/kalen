@@ -121,7 +121,7 @@ month_vivod = "Декабря";
                 <div class="accordion"> 
    <div class="tab">
     <input type="checkbox" id="tab1" name="tab-group">
-    <label onclick="polit_con();" for="tab1" class="tab-title" style = "background-color: #50a2de;">Политика конфиденциальности:</label> 
+    <label onclick="polit_con();" for="tab1" class="tab-title">Политика конфиденциальности:</label> 
     <section class="tab-content"> 
      <p>Под HTML5 обычно подразумевают два разных понятия:</p>
      <ul>
@@ -133,7 +133,7 @@ month_vivod = "Декабря";
    </div> 
    <div class="tab">
     <input onclick="per_dan();" type="checkbox" id="tab2" name="tab-group">
-    <label for="tab2" class="tab-title"  style = "background-color: #50a2de;">Обработка персональных данных:</label> 
+    <label for="tab2" class="tab-title">Обработка персональных данных:</label> 
     <section class="tab-content"> 
      Нет, на HTML5 по прежнему нельзя программировать, основным языком является JavaScript. 
      Так что в разговоре лучше не упоминать, что умеешь программировать на HTML5, засмеют.
