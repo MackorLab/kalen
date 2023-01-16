@@ -27,7 +27,8 @@ class Header {
         let btn_bord_c = [NASROYKI[0].btn_bord_c]
 	 let btn_vn_ots_v = [NASROYKI[0].btn_vn_ots_v]
         let btn_vn_ots_n = [NASROYKI[0].btn_vn_ots_n]
-	
+	let btn_bord_rad_s = [NASROYKI[0].btn_bord_rad_s]
+        let btn_bord_wid_s = [NASROYKI[0].btn_bord_wid_s]
         
 if (month == 1) {
 month_vivod = "Январь";
@@ -102,9 +103,9 @@ month_vivod = "Декабрь";
 	
 	padding:  ${btn_vn_ots_v}  ${btn_vn_ots_n};
 	margin-top: 5px;
-	border-radius: 10px;
+	border-radius: ${btn_bord_rad_s};
 	
-	border-width: 2px;
+	border-width: ${btn_bord_wid_s};
 	cursor: pointer;
 	
 	
