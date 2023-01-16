@@ -83,9 +83,9 @@ month_vivod = "Декабря";
     
       
       <input id="name" name='name'>
-      <p>Имя(с заглавной буквы)</p>
+      <p class="in_t_form">Имя(с заглавной буквы)</p>
       <input class="pop_phone" id="email" name='email' value="" onclick="clean_inp_email();">
-       <p>Email</p>
+       <p class="in_t_form">Email</p>
       
      <select id="country" class="my-select">
       <option data-img-src="https://v1.iconsearch.ru/uploads/icons/finalflags/16x16/russia-flag.png" value="7">RUS +7</option>
@@ -102,7 +102,7 @@ month_vivod = "Декабря";
   
     
  <input class="pop_phone" id="phone" name='phone' value="" onclick="clean_inp();">
-   <p>Телефон(код страны уже заполнен)</p>
+   <p class="in_t_form">Телефон(код страны уже заполнен)</p>
 
  
 
