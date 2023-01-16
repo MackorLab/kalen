@@ -20,6 +20,12 @@ class Header {
         let avat_c_text = [NASROYKI[0].avat_c_text]
         let avat_c_data = [NASROYKI[0].avat_c_data]
         let form_chek_c = [NASROYKI[0].form_chek_c]
+	
+	let btn_text_s = [NASROYKI[0].btn_text_s]
+        let btn_text_c = [NASROYKI[0].btn_text_c]
+        let btn_board_c = [NASROYKI[0].btn_board_c]
+         let btn_bord_c = [NASROYKI[0].btn_bord_c]
+	
         
 if (month == 1) {
 month_vivod = "Январь";
@@ -82,16 +88,24 @@ month_vivod = "Декабрь";
 }
 
 
+        
+
 .btn_send {
+
+        color: ${btn_text_c};
+	font-size: ${btn_text_s};
+	background-color: ${btn_board_c};
+	border-color: ${btn_bord_c};
+	
 	margin-top: 5px;
 	padding:  5px  10px;
-	color: red;
+	
 	border-radius: 10px;
-	border-color: red;
-	border-width: 4px;
+	
+	border-width: 2px;
 	cursor: pointer;
-	background-color: #0c4ccc;
-	font-size: 1.2em;
+	
+	
 	
 }
 
