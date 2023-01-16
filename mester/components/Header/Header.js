@@ -85,7 +85,7 @@ month_vivod = "Декабрь";
 .btn_send {
 	margin-top: 5px;
 	padding:  5px  10px;
-	border: 1px solid #0c4ccc;
+	
 	border-radius: 10px;
 	cursor: pointer;
 	outline: none;
