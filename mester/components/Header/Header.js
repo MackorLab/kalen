@@ -88,8 +88,8 @@ month_vivod = "Декабрь";
 	
 	border-radius: 10px;
 	cursor: pointer;
-	outline: none;
-	background: none;
+	background-color: #0c4ccc;
+	
 	font-family: inherit;
 	font-size: inherit;
 }
