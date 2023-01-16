@@ -19,7 +19,7 @@ class Header {
         let avat_c_name = [NASROYKI[0].avat_c_name]
         let avat_c_text = [NASROYKI[0].avat_c_text]
         let avat_c_data = [NASROYKI[0].avat_c_data]
-        
+        let form_chek_c = [NASROYKI[0].form_chek_c]
         
 if (month == 1) {
 month_vivod = "Январь";
@@ -68,6 +68,14 @@ month_vivod = "Декабрь";
     background: ${avat_fon_color};
     text-align: center;
 }
+
+.tab :checked + .tab-title {
+ background-color: ${form_chek_c};
+ border-radius: 3px 3px 0 0; /* Скругляем уголки */
+ color: #fff; /* Цвет текста */
+ }
+
+
 </style>     
    <div class="hedr_sdvg"> 
 
