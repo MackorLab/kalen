@@ -78,7 +78,7 @@ month_vivod = "Декабрь";
 
 /* When the radio button is checked, add a blue background */
 .container_sho input:checked ~ .checkmark_sho {
-    background-color: #50a2de;
+    background-color: #0c4ccc;
 }
 
 </style>     
