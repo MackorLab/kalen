@@ -614,7 +614,7 @@ if (!validateEmail(emails)){
      console.log('Начало отправки в АП'); 
     
     spinnerPage.render();
-fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vkid + '&vxod=2&month=' + month + '&id_dey=' + id_dey + '&periud=' + cech,)
+fetch('https://skyauto.me/cllbck/' + p + '?api=1&uid=' + vcsps + '&vxod=2&month=' + month + '&id_dey=' + id_dey + '&periud=' + cech,)
     .then(res => res.json())
     .then(body => {
 		CATALOG = body.katalog;
