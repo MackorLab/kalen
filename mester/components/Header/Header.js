@@ -29,6 +29,8 @@ class Header {
         let btn_vn_ots_n = [NASROYKI[0].btn_vn_ots_n]
 	let btn_bord_rad_s = [NASROYKI[0].btn_bord_rad_s]
         let btn_bord_wid_s = [NASROYKI[0].btn_bord_wid_s]
+	let form_zag_c = [NASROYKI[0].form_zag_c]
+        let form_zag_s = [NASROYKI[0].form_zag_s]
         
 if (month == 1) {
 month_vivod = "Январь";
@@ -115,6 +117,16 @@ month_vivod = "Декабрь";
 .btn_send:hover {
     box-shadow: 7px 10px 14px 1px rgba(0,0,0,0.24),0 17px 50px 1px rgba(0,0,0,0.19);
 }
+
+
+.form_zag{
+  color: ${form_zag_c};
+  font-size: ${form_zag_s};
+}
+
+
+
+
 </style>     
    <div class="hedr_sdvg"> 
 
