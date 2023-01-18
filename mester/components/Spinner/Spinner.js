@@ -1,5 +1,5 @@
 class Spinner {
-	var proxod = 0;
+	
 	
 	
   handleClear() {
@@ -12,9 +12,9 @@ class Spinner {
     
     
     
-if (proxod == 0 ) {
+if (proxod_spiner == 0 ) {
    spin = "#c9c5c5";
- proxod = proxod + 1;
+ proxod_spiner = proxod_spiner + 1;
 } else {
   let spiner_c = [NASROYKI[0].spiner_c]
   spin = spiner_c;
