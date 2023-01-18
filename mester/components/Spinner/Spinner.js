@@ -18,7 +18,7 @@ if (proxod == 0 ) {
 } else {
   let spiner_c = [NASROYKI[0].spiner_c]
   spin = spiner_c;
-   otstup = 10;
+  
 } 		
 	
     
