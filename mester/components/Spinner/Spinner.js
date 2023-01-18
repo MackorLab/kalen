@@ -13,7 +13,7 @@ class Spinner {
     
     
 if (proxod == 0 ) {
-   spin = "#ededed";
+   spin = "#c9c5c5";
  proxod = proxod + 1;
 } else {
   let spiner_c = [NASROYKI[0].spiner_c]
