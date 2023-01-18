@@ -1,4 +1,7 @@
 class Spinner {
+	var proxod = 0;
+	
+	
   handleClear() {
       ROOT_SPINNER.innerHTML = '';
   }
@@ -6,7 +9,7 @@ class Spinner {
   render() {
     
     let spin;
-    let proxod;
+    
     
     
 if (proxod == 0 ) {
