@@ -28,13 +28,17 @@ if (proxod_spiner == 0 ) {
       
       <style>
       
-.loader {
- 
-  border-top: 6px solid ${spin};
 
-}
       
-      
+  .loader {
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+   border-top: 6px solid ${spin};
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}    
       </style>
       
       
