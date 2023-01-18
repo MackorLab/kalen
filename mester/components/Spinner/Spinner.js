@@ -6,7 +6,7 @@ class Spinner {
   render() {
     
     let spin;
-    let proxod = 0;
+    let proxod;
     
     
 if (proxod == 0 ) {
