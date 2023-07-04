@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Защищенное YouTube видео</title>
+</head>
+<body>
+  <div id="player"></div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    // Функция для создания YouTube плеера
+    function createPlayer() {
+      var player = new YT.Player('player', {
+        videoId: '922BWy3OOoQ', // Замените VIDEO_ID на идентификатор YouTube видео
+        playerVars: {
+          controls: 0, // Отключение элементов управления плеером
+          disablekb: 1, // Отключение клавиатурного управления
+          enablejsapi: 0, // Отключение JavaScript API
+          modestbranding: 1, // Скрытие логотипа YouTube
+          rel: 0, // Отключение рекомендаций после воспроизведения
+          showinfo: 0 // Скрытие информации о видео
+        },
+        events: {
+          onReady: onPlayerReady
+        }
+      });
+    }
+
+    // Функция, вызываемая при готовности плеера
+    function onPlayerReady(event) {
+      event.target.playVideo(); // Автоматическое воспроизведение видео
+    }
+
+    // Загрузка YouTube API и создание плеера
+    function loadPlayer() {
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    // Запуск создания плеера после загрузки страницы
+    window.onload = loadPlayer;
+  </script>
+</body>
+</html>
